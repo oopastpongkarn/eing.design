@@ -1,0 +1,1401 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body { background-color: #000000;
+  overflow: hidden;
+    position: fixed;
+/*    border-left: 10px solid #900;
+    border-right: 10px solid #900;*/ 
+}
+
+::selection {
+  color: white;
+  background-color: red;
+}
+
+::-moz-selection{
+  color: white;
+  background-color: red;
+}
+
+
+/*
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░░░░████░░████░░░████░░░░░░░
+░░░░░░░░████░░████░░░░░░░░░░░░░░
+░░░░░░░░████░░████░░░████░░░░░░░
+░░░░░░░░████▄▄████░░░████░░░░░░░
+░░░░░░░░██████████░░░████░░░░░░░
+░░░░░░░░████▀▀████░░░████░░░░░░░
+░░░░░░░░████░░████░░░████░░░░░░░
+░░░░░░░░████░░████░░░████░░░░░░░
+░░░░░░░░████░░████░░░████░░░░░░░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░*/
+
+//กม มง สะ ตาด
+
+.them-borders {
+  position: fixed;
+  z-index: 10000;
+  background-color: black;
+  visibility: hidden;
+/*  opacity: 0.5;*/
+}
+
+#top-border {
+    top: 0%;
+    height: 15px;
+    width: 100%;
+}
+
+#left-border {
+    left: 0%;
+    height: 100%;
+    width: 17px;
+}
+
+
+#bottom-border {
+    bottom: 0%;
+    height: 15px;
+    width: 100%;
+}
+
+#right-border {
+    right: 0%;
+    height: 100%;
+    width: 17px;
+}
+
+
+.movethis {
+    width: 110vw;
+    height: 120vh;
+    position: absolute;
+    margin-top: -30px;
+    z-index: -1;
+    cursor: move;
+/*    opacity: 0.3;*/
+
+}
+
+#bg1 { background-color: rgb(229, 229, 229);
+    z-index: 0;
+}
+
+#bg2 { background-color: #ffc42c;
+     z-index: -1;
+}
+
+#bg3 { background-color: #ff1530;
+     z-index: -2;
+}
+
+
+/*#96d9e5*/
+#bg4 { background-color: #a5dbe2;
+     z-index: -3;
+}
+
+#colophon { 
+    color: black;
+   font-family: 'roboto-mono', monospace;
+    font-size: 18px;
+    line-height: 30px;
+   font-weight: 500;
+   z-index: -4;
+    width: 18vw;
+    height: auto;
+    top: 27vh;
+    left: 32vw;
+    padding: 15px;
+    border: solid 10px black;  
+}
+
+#colophon a, #colophone a:visited {
+    color: black;
+    background-color: black;
+    text-decoration: none;
+}
+
+#colophon a:hover, #colophon a:hover:visited {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+
+#bg5 { background-color: white;
+     z-index: -5;
+}
+
+
+
+/*
+#yellow { background-color: #ffc42c;
+    z-index: 0;}
+
+#red { background-color: rgb(255, 44, 51);
+     z-index: -1;}
+
+#blue { background-color: rgb(214, 240, 255);
+     z-index: -2;}
+*/
+
+
+
+/*
+ ▒▒▒▒▒▒▒▒▒▒▒▒ borders
+ ▒▒▒▒▓▒▒▓▒▒▒▒
+ ▒▒▒▒▓▒▒▓▒▒▒▒ 
+ ▒▒▒▒▒▒▒▒▒▒▒▒
+ ▒▓▒▒▒▒▒▒▒▒▓▒
+ ▒▒▓▓▓▓▓▓▓▓▒▒ windows
+ ▒▒▒▒▒▒▒▒▒▒▒▒*/
+
+/*
+#behindeing {
+    width: 100%;
+    height: auto;
+    right: 80px;
+    top: 34px;
+    position: fixed;
+    z-index: -1;
+}
+*/
+
+#behindeing {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    opacity: 0;
+}
+
+
+ #imaginary-bounding-box-lol {
+  width: 200%;
+  height: 200%;
+  background-color: transparent;
+  position: fixed;
+  z-index: 3;
+  margin-left: -50%;
+/*  margin-top: 30px;*/
+ }
+
+/* R E S U M E*/
+
+#eingsresume_lol {
+    z-index: 100;
+    left: 30vw;
+}
+
+#eingsresume_lol img {
+    width: 580px; 
+    height:auto;
+    cursor: move;
+}
+
+#xresume {
+  margin-top: 20px;
+  position: relative;
+  font-family: 'roboto-mono', monospace;
+  font-weight: 500;
+  color: black;
+  font-size: 45px;
+  cursor: pointer;
+  z-index: 12;  
+}
+
+#xresume:hover {
+    opacity: 0.5;
+}
+
+/* P R O J E C T S */
+
+ #projects-window {
+  width: 85%; 
+  height: 685px;
+  background-color: white;
+/*  border-top: black solid 7px;*/
+  border-bottom: black solid 7px;
+  border-left: black solid 7px;
+  border-right: black solid 7px;
+  position: fixed;
+  z-index: 100;
+  top: 3.8%;
+  left: 7.5%;
+  min-width: 300px;
+/*  overflow: hidden;*/
+
+ }
+/*
+ #resume-window {
+  width: 20%; 
+  padding-bottom: 45%;
+  height: 0;
+  background-color: white;
+  border-bottom: black solid 7px;
+  border-left: black solid 7px;
+  border-right: black solid 7px;
+  z-index: 42;
+  top: 40px;
+  left: 20%;
+  position: fixed;
+ }
+*/
+
+ .bar {
+  width: 100%;
+  height: 20px;
+  border-bottom: black solid 7px;
+  border-top: black solid 7px;
+  margin-top: 0px;
+  background-color: white;
+  cursor: move;
+ }
+
+ .xclosemex {
+  font-family: 'roboto-mono', monospace;
+  font-weight: 800;
+  color: black;
+  float: right;
+  padding-right: 6px;
+  margin-top: -35px;
+  cursor: pointer;
+     font-size: 23px;
+ }
+
+ .title-window {
+  font-size: 16px;
+  font-family: 'roboto-mono', monospace;
+  font-weight: 800;
+  margin-top: -2px;
+  color: black;
+  text-align: center;
+  cursor: move;
+
+ }
+
+
+
+/*PROJECT CONTENTS*/
+/*PROJECT CONTENTS*/
+/*PROJECT CONTENTS*/
+/*PROJECT CONTENTS*/
+/*PROJECT CONTENTS*/
+/*PROJECT CONTENTS*/
+
+#projects-content {
+
+  width: 100.07%;
+  height: 95%;
+  word-wrap: break-word;
+  overflow-y: scroll;
+  position: absolute;
+  /*text-align: center;*/
+    background-color: white;
+
+    
+}
+
+
+
+#projects-content p {
+    padding: 6% 1% 3% 5%;
+    width: 80%;
+    color: black;
+    font-family: 'roboto-mono', monospace;
+   font-weight: 500;
+}
+
+/*
+#filter p{
+    padding: 6% 1% 3% 5%;
+    width: 80%;
+    color: black;
+    font-family: 'roboto-mono', monospace;
+   font-weight: 500;
+}
+*/
+
+.boxes-for-projects {
+  width: 30%;
+  height: 0;
+  padding-bottom: 30%;
+  background-color: black;
+  z-index: 1000;
+  position: relative;
+  float: left;
+  margin: 1.65%;
+  text-align: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+
+.boxes-for-projects:hover {
+    animation-name: opacity;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes opacity {
+    0% {opacity: 1;}
+    100% {opacity: 0.5;}
+}
+
+
+/* DETAILS WINDOW
+ C O N T E N T S 
+  C O N T E N T S 
+   C O N T E N T S 
+    C O N T E N T S 
+     C O N T E N T S 
+      C O N T E N T S */
+
+
+.detailed-project-windows {
+  width: 85.5%; 
+  height: 690px;
+  background-color: white;
+/*  border-top: black solid 7px;*/
+  border-bottom: black solid 7px;
+  border-left: black solid 7px;
+  border-right: black solid 7px;
+  position: fixed;
+  z-index: 100;
+  left: 7.4%;
+    top:3.3%;
+  min-width: 300px;
+/*  overflow: hidden;*/
+}
+
+.detailed-project-content {
+  background-color: transparent;
+  width: 100%;
+  height: 95.0%;
+  word-wrap: break-word;
+  overflow-y: scroll;
+  position: absolute;
+    overflow-x: hidden;
+}
+
+.detailed-project-content p {
+    padding: 4% 1% 1% 5%;
+    width: 80%;
+    color: black;
+    font-family: 'roboto-mono', monospace;
+    font-weight: 500;
+    line-height: 1.5em;
+    min-width: 230px;
+}
+
+
+/* A B O U T  _ C O N T E N T*/
+
+
+
+.links_in_about {
+    background-color: black; 
+    color:black;
+}
+
+#xabout {
+  bottom: 0px; 
+  left: 55px;
+    position: relative;
+  font-family: 'roboto-mono', monospace;
+  font-weight: 500;
+  color: black;
+  font-size: 45px;
+  cursor: pointer;
+  z-index: 12;  
+}
+
+#xabout:hover {
+    opacity: 0.5;
+}
+
+ #about-window {
+  width: 400px; 
+  height: 315px;
+  background-color: white;
+/*  border-top: black solid 7px;*/
+  border: black solid 10px;
+  z-index: 40;
+  top: 22.1vh;
+  left: 30.2vw;
+  position: fixed;
+     cursor: move;
+     box-shadow: 9px 9px black;
+ }
+
+#about-content {
+    width: 340px;
+    height: 300px;
+    padding: 30px;
+  background-color: transparent;
+  word-wrap: break-word;
+  position: fixed;
+  font-family: 'roboto-mono', monospace;
+  font-weight: 500;
+  color: black;
+  font-size: 16px;
+  cursor: move;
+  line-height: 29px;
+  z-index: 12;
+    
+    
+}
+
+#about-content a, #about-content a:visited{
+    text-decoration: none;
+    color: black;
+    
+}
+
+#about-content a:hover, #about-content a:hover:visited, #r_in_about:hover, #r_in_about:hover:visited{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    
+}
+
+
+
+
+/*
+#about-content a, a:visited {
+   color: black;
+   font-family: 'roboto-mono', monospace;
+   font-weight: 500;
+   font-size: 1.4em;
+   opacity: 1;
+   text-decoration: none;
+}
+
+
+#about-content a:hover, a:hover:visited {
+   color: #ffc42c;
+   font-family: 'roboto-mono', monospace;
+   font-weight: 500;
+   font-size: 1.4em;
+   text-decoration: none;
+}
+*/
+
+/*l3r*/
+#lr_vid {
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 7%;
+    float: left;
+}
+
+#lr_img img{
+    width: 35%;
+    margin-left: 10%;
+    float: left;
+    clear: left;
+}
+
+#lrtext {
+    width: 40%;
+    margin-left: 5%;
+    float: left;
+    margin-top: 8%;  
+}
+
+#lr_img_process{
+    width: 90%;
+    margin-left: 5%;
+    float: left;
+    margin-bottom: 5%;
+}
+
+
+/*GEORGE BOOK*/
+#book_cover_grey {
+    width: 90%;
+    margin: 4% 5% 5% 5%;
+    min-width: 270px;
+}
+
+#book2clean {
+    width:35%;
+    margin:1% 1.5% 1.5% 12%;
+    float: left;
+    min-width: 270px;
+}
+
+#typebook_bullets {
+    width:40%;
+    padding-top:0;
+    padding-left:4%;
+    float: left;
+}
+
+#book9 {
+    width: 100%;
+    float: left;
+    margin: 5% 0% 5% 0%;
+}
+
+#book_explain {
+    width:43%;
+    padding-top:1%;
+    padding-left:15%;
+    float: left;  
+}
+
+#book12 {
+    width: 60%;
+    float: left;
+    margin: 5% 0% 10% 25%;
+}
+
+#handdrawn1 {
+    width: 23.5%;
+    margin: 0% 0% 5% 11%;
+    float: left;
+    clear: left;
+}
+
+#handdrawn2 {
+    width: 25.05%;
+    margin: 0% 0% 5% 5%;
+    float: left;
+}
+
+#handdrawn3 {
+    width: 23.5%;
+    margin: 0% 0% 5% 5%;
+    float: left;
+}
+
+#book11 {
+    width: 100%;
+    float: left;
+    margin: 5% 0% 5% 0%;
+    min-width:270px;
+}
+
+#book3 {
+    float: left;
+    height:100%;
+    margin: 5% 0% 0% 28%;
+    min-width:270px;
+}
+
+/*TYPE 44*/
+
+#fourfourthree {
+    width: 70%;
+    margin: 5% 15% -7% 15%;
+    min-width: 270px;
+    float: left;
+}
+
+#usa {
+    width: 80%;
+    padding: 5% 10% 0% 10%;
+}
+
+#fouroriginal {
+    width: 54%;
+    padding: 0.6% 1% 0% 23%;
+    min-width:270px;
+    float: left;
+    clear: left;
+    
+}
+#fourfour {
+    float: left;
+    width: 54%;
+    padding: 15% 1% 0% 23%;
+    min-width:270px;
+    margin-top: -69.1%;
+    cursor: pointer;
+}
+
+#fourfour:hover{
+    opacity: 0;
+}
+
+#type_as_img {
+    float: left;
+    width: 60%;
+    padding: 6% 0% 0% 20%;
+}
+
+/*GD 3 BOBA*/
+#boba-text {
+    width:35%;
+    padding-left:2%;
+    margin-top:-1.5%;
+    margin-left: -4%;
+}
+
+.clearleft {
+  clear: left;
+}
+
+
+.floatleft {
+  float: left;
+}
+
+.floatright {
+  float: right;
+}
+
+.full {
+  width: 100%;
+}
+
+.minwidth270 {
+  min-width: 270px;
+}
+
+#boba_head2 {
+    margin: 0% 0% 5% 0%;
+    min-width:270px;
+    width: 100%;
+    float: left;
+}
+
+#poster_system {
+    float: left;
+    width: 45%;
+    margin: 1% 0% 0% 7%;
+    padding-bottom: -4%;
+}
+
+/*
+#boba-mov {
+  width: 80%;
+  padding: 0% 0% 0% 10%;
+}
+*/
+
+#boba-mov{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+#boba-mov iframe{
+
+    left:10%;
+    top:0;
+    height:80%;
+    width:80%;
+    position:absolute;
+}
+
+#cup {
+    width: 100%;
+    clear: left;
+    float: left;
+}
+
+#handbobagif {
+    margin: 0% 0% 0% 0%;
+    width: 100%;
+    float: left;
+    clear: left;
+}
+.poster_alt {
+  width: 11.5%;
+  margin: 0.6% 0% 0.6% 1%;
+  float: left;
+}
+
+#poster_alt {
+    float: left;
+    width: 49%;
+    padding: 0% 0% 0% 1%;
+    margin-top: -16.9%;
+}
+
+#webmockup {
+    width: 80%;
+    clear: left;
+    padding: 0% 0% 3% 10%;
+    float: left;
+}
+
+#boba_vid_sec {
+  background-color: transparent;
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
+#vidgif {
+    float: left;
+    clear: left;
+    padding: 0% 0% 1.6% 10%;
+    width: 80%;
+    
+}
+
+
+/*block*/
+#book_text {
+    width: 50%;
+    padding: 4% 0% 3% 20%;
+}
+
+/*FILM*/
+#filmhead {
+    margin: 0% 0% 0% 0%;
+    min-width:270px;
+    width: 100%;
+    float: left;
+}
+
+#filmsec {  
+  background-color: #050505;
+  width: 100%;
+  height: auto;
+  float: left;
+    padding-top: 10%;
+    
+}
+
+#photo1, #photo2, #photo3 {
+    margin: 7% 20% 15% 22.5%;
+    min-width: 270px;
+    width: 55%;
+    float: left;
+}
+
+
+#photo3gif {
+    margin: 0% 20% 5% 22.5%;
+    min-width: 270px;
+    width: 55%;
+    float: left;
+    clear: left;
+}
+
+#fix {
+    width: 20%;
+    padding: 10% 3% 10% 15%;
+    float: left;
+}
+
+#filmtext {
+    width: 45%;
+    padding: 10% 0% 5% 3%;
+    float: left;
+    color: white;
+}
+
+#photo3gif2 {
+    margin: 0% 20% 5% 22.5%;
+    min-width: 270px;
+    width: 55%;
+    float: left;
+    clear: left;
+}
+
+/* milestone */
+#milestone-detail img {
+    height: 96%;
+    padding-top: 1%;
+    padding-left: 10%;
+ 
+}
+
+#milestone_text {
+    padding-left: 10%;
+    width: 45%;
+}
+
+
+/*NOVEMBERNOVEMBERNOVEMBERNOVEMBER*/
+
+#november {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 12%;
+    margin-bottom: 14%;
+    float: left;
+}
+
+#novemgif {
+    width: 25%;
+/*    margin: calc(50vh - 100px) auto 0px auto;*/  
+    float: left;
+    margin-left: 17%;
+}
+
+
+#novtext {
+    float: left;
+    width: 35%;
+    padding: 0% 0% 3% 7%;
+}
+
+#nov_sketch {
+    width: 49%;
+    float: left;
+    clear: left;
+    margin: 12% 0% 0% 25%;
+
+}
+
+/*I D   T R I C K*/
+
+#idgrey {
+    background-color: #e0e0e0;
+    position: absolute;
+    width: 100%;
+    height: 500%;
+    z-index: -33;
+    margin-top: -5px;
+}
+#id_trick {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+#id_trick_poster {
+    width: 55%;
+    margin-left: 27.5%;
+}
+
+#idtext {
+    width: 45%;
+    padding: 10% 0% 0% 10%;
+    float: left;
+    color: black;
+
+}
+
+
+
+/*
+.photo3abc {
+    width: 29%;
+    padding: 10% 0% 10% 3%;
+}
+*/
+
+
+/*PONG*/
+
+#pong_game_vid {
+    width: 100%;
+    margin-top: -147px;
+}
+
+#pong_web {
+    width: 85%;
+    margin-left: 7.5%;
+}
+
+/* sound */
+
+/*
+#sound_vid {
+    width: 96%;
+    margin-left: 2%;
+}
+*/
+
+#sound_vid{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+#sound_vid iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+
+/*keynote*/
+#keynote_video{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+#keynote_video iframe{
+    left:5%;
+    top:0;
+    height:90%;
+    width:90%;
+    position:absolute;
+}
+
+
+/*
+──────▄▀▄─────▄▀▄   windows
+─────▄█░░▀▀▀▀▀░░█▄
+─▄▄──█░░░░░░░░░░░█──▄▄  sticky
+█▄▄█─█░░▀░░┬░░▀░░█─█▄▄█*/
+
+
+
+/*#eing-is { 
+  height: 52px;
+  width: 300px;
+  position: fixed;
+  z-index: 2;
+  left: 100px;
+  top: 85px;
+  mix-blend-mode: difference;
+}*/
+
+
+
+.stickyeing {
+  width: 570px;
+  bottom: 0px;
+  right: 0px;
+  z-index: 10;
+  position: fixed;
+
+}
+
+.xstickyeing {
+  bottom: 586px; 
+  right: 160px;
+  position: fixed;
+  font-family: 'roboto-mono', monospace;
+  font-weight: 500;
+  letter-spacing: -2px;
+  color: black;
+  font-size: 45px;
+  cursor: pointer;
+  z-index: 12;
+}
+
+.xstickyeing:hover {
+    opacity: 0.5;
+}
+
+#stickyandx {
+  width: 370px;
+  bottom: 440px; 
+  right: 180px;
+  position: absolute;
+  z-index: 12;
+}
+
+#eingonusa {
+    bottom: 480px;
+    right: 325px;
+    position: fixed;
+  font-family: 'roboto-mono', monospace;
+  font-weight: 500;
+  color: black;
+  font-size: 85px;
+  cursor: pointer;
+  z-index: 12;
+  letter-spacing: -5px;
+}
+
+#gd {
+    bottom: 430px;
+    right: 307px;
+    position: fixed;
+  font-family: 'roboto-mono', monospace;
+  font-weight: 500;
+  color: black;
+  font-size: 10.3px;
+  cursor: pointer;
+  z-index: 12;
+}
+
+/*
+#emaileing p{
+  bottom: 563px; 
+  left: 1120px;
+  position: fixed;
+  font-family: 'roboto-mono', monospace;
+  font-weight: 800;
+  color: black;
+  font-size: 10px;
+  cursor: pointer;
+    line-height: 15px;
+  z-index: 12;
+}
+*/
+
+#emaileing a{
+    background-color: #ffc42c;
+  bottom: 445px; 
+  right: 397px;
+  position: fixed;
+  font-family: 'roboto-mono', monospace;
+  font-weight: 500;
+  color: black;
+  font-size: 15px;
+  cursor: pointer;
+  z-index: 12;
+    text-decoration: none;
+     border-bottom: solid black 2px;
+}
+
+#emaileing a:hover {
+/*     border: none;*/
+    color: white;
+}
+
+
+#eingandnav {
+    position: absolute;
+    top: 22.1vh;
+    left: 9vw; 
+    box-shadow: 10px 10px black;
+}
+
+#eeiinngg {
+    width: 255px;
+    border: solid black 10px;
+    padding: 5px;
+    font-size: 100px;
+    font-family:'roboto-mono', monospace;
+    z-index:100;
+    letter-spacing: -5px;
+    font-weight:500;
+    cursor: move;
+    opacity: 1;
+    color: #000000;
+
+}
+
+#eeiinngg p{
+    height: 130px;
+    margin-top: -30px;
+    margin-left: 10px;
+}
+
+#nav {
+    width: 255px;
+    margin-top: -10px;
+    line-height: 30px;
+    height: auto;
+    right: 6%;
+    padding: 5px;
+    border: solid black 10px;
+}
+
+#projects {
+ position: absolute;
+  width: 110px;
+  height: 110px;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 4;
+    top: 285px;
+}
+
+
+#pj-icon { 
+  position: absolute;
+  z-index: 0;
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
+    top: 285px;
+    mix-blend-mode: multiply;
+}
+
+#resume {
+ position: absolute;
+  width: 110px;
+  height: 110px;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 4;
+    top: 285px;
+    left: 100px;
+}
+
+#r-icon { 
+  position: absolute;
+  z-index: 0;
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
+    top: 285px;
+    left: 100px;
+    mix-blend-mode: multiply;
+}
+
+#contact {
+  width: 110px;
+  height: 110px;
+  position: fixed;
+  top: 490px;
+  right: 40px;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 4;
+}
+
+
+#c-icon { 
+  position: fixed;
+  z-index: 0;
+  top: 490px;
+  right: 40px;
+  -webkit-filter: grayscale(100%);   /*Safari 6.0 - 9.0*/ 
+    filter: grayscale(100%);
+}
+
+
+#about
+{
+  font-family: 'roboto-mono', monospace;
+  font-weight: 500;
+  color: black;
+  font-size: 15px;
+  cursor: help;
+  position: relative;
+  z-index: 20;
+
+    
+/*  border: solid black 3.5px;*/
+/*  padding: 5.6px;*/
+}
+
+
+#contacteing {
+  font-family: 'roboto-mono', monospace;
+  font-weight: 500;
+  color: black;
+  font-size: 15px;
+  cursor: context-menu;
+  position: relative;
+  z-index: 20;
+
+/*  border: solid black 3.5px;*/
+/*  padding: 5.6px;*/
+}
+
+#about:hover, #contacteing:hover, .miniport:hover {
+/*    border-bottom: solid black 3.5px;*/
+    color: white;
+    background-color: black;
+
+}
+
+
+
+.miniport, .miniport:visited {
+  font-family: 'roboto-mono', monospace;
+  font-weight: 500;
+  color: black;
+  font-size: 15px;
+  cursor: wait;
+  position: relative;
+  text-decoration: none;
+  z-index: 12;
+  width: auto;
+
+/*   border: solid black 3.5px;*/
+/*  padding: 5.6px;*/
+}
+
+
+
+
+
+
+#about:active, .miniport:active, .miniport:visited:active, #contacteing:active {
+  color: #ffc42c;
+}
+
+
+
+h1 {  /*width: 270px;*/
+      width: 40%;
+      font-family: 'roboto-mono', monospace;
+      font-weight: 500;
+      color: black;
+      font-size: 25px;
+      top: 88px;
+      left: 120px;
+      text-decoration: none;
+      position: absolute;
+      z-index: -100;
+      line-height: 35px;
+/*      font-weight: 900;*/
+      /*mix-blend-mode: difference;*/
+}
+
+
+/*L E A V E   OR  S T A Y*/
+/*L E A V E   OR  S T A Y*/
+/*L E A V E   OR  S T A Y*/
+/*L E A V E   OR  S T A Y*/
+/*L E A V E   OR  S T A Y*/
+/*L E A V E   OR  S T A Y*/
+
+#leave-stay-window {
+  width: 360px; 
+  height: 250px;
+    background-color: white;
+/*  border-top: black solid 7px;*/
+  border-bottom: black solid 10px;
+  border-top: black solid 10px;
+  border-left: black solid 10px;
+  border-right: black solid 10px;
+  position: fixed;
+  z-index: 42;
+  top: 22%;
+  left: 32%;
+   box-shadow: 10px 20px black;
+    cursor: move;
+
+  
+ }
+
+
+#leave-stay-content {
+  background-color: transparent;
+  width: 360px;
+  height: 100%;
+  word-wrap: break-word;
+  position: relative;
+}
+
+#leave-stay-content p {
+  font-family: 'roboto-mono', monospace;
+  font-weight: 500;
+  color: black;
+  font-size: 25px;
+  line-height: 40px;
+  padding: 30px 40px 30px 34px;
+}
+
+#stay {
+  cursor: pointer;
+    border: solid black 10px;
+  width: 175px;
+  height: 110px;
+  left: 175px;
+  overflow: hidden;
+  position: absolute;
+    background-color: white;
+     
+  
+}
+
+#iwantyoutostay {
+  width: 100%;
+  height: auto;
+  color: black;
+  font-family: 'roboto-mono', monospace;
+  font-weight: 800;
+  font-size: 55px;
+  position: absolute;
+  padding-top: 9%;
+  text-align: center;
+}
+
+#dont-go {
+  cursor: pointer;
+    border: solid black 10px;
+  width: 175px;
+  height: 110px;
+  left: -10px;
+  overflow: hidden;
+  position: absolute;
+   background-color: white;
+     
+}
+
+#bye a{
+  width: 100%;
+  height: auto;
+  font-family: 'roboto-mono', monospace;
+  font-weight: 800;
+  font-size: 60px;
+  position: absolute;
+  padding-top: 9%;
+  text-align: center;
+}
+
+#bye a, #bye a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+#bye a:hover, #iwantyoutostay:hover, #stay:hover, #stay:hover:visited #bye a:hover:visited, #bye:hover, #dont-go:hover, #dont-go:hover:visited {
+  background-color: white;
+      background-image: radial-gradient(black 20%, transparent 35%),
+      radial-gradient(black 20%, transparent 35%);
+      background-size: 5px 5px;
+
+}
+
+#bye a:active, #iwantyoutostay:active, #stay:active, #stay:active:visited #bye a:active:visited, #bye:active, #dont-go:active, #dont-go:active:visited {
+   background-color: #ffc42c;
+      background-image: radial-gradient(black 20%, transparent 35%),
+      radial-gradient(black 20%, transparent 35%);
+      background-size: 5px 5px;
+}
+
+
+
+/*SCROLLBARSCROLLBARSCROLLBARSCROLLBAR*/
+
+::-webkit-scrollbar {
+      width: 20px;
+} /* this targets the default scrollbar (compulsory) */
+
+::-webkit-scrollbar-track {
+      background-color: white;
+      border-left: solid black 6px;
+} /* the new scrollbar will have a flat appearance with the set background color */
+ 
+::-webkit-scrollbar-thumb {
+      background-color: #eaeaea;
+      background-image: radial-gradient(black 20%, transparent 35%),
+      radial-gradient(black 20%, transparent 35%);
+      background-size: 5px 5px;
+      background-position: 0 0, 0px 0px;
+      border-top: 6px solid black; 
+      border-bottom: 6px solid black; 
+      border-left: 6px solid black; 
+      cursor: pointer;
+} /* this will style the thumb, ignoring the track */
+ 
+
+::-webkit-scrollbar-thumb:hover {
+      background-color: #aaaaaa;
+      background-image: radial-gradient(black 20%, transparent 35%),
+      radial-gradient(black 20%, transparent 35%);
+      background-size: 5px 5px;
+}
+
+ ::-webkit-scrollbar-thumb:active {
+      background-color: #ffc42c;
+      border-top: 6px solid black; 
+      border-bottom: 6px solid black; 
+      border-left: 6px solid black; 
+}
+
+::-webkit-scrollbar-button {
+      background-color: white;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+ 
+::-webkit-scrollbar-corner {
+      background-color: black;
+} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+
+

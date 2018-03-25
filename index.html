@@ -1,0 +1,1016 @@
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+  
+       <!-- 
+  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+  ░░░░░░░░████░░████░░░████░░░░░░░
+  ░░░░░░░░████░░████░░░░░░░░░░░░░░
+  ░░░░░░░░████░░████░░░████░░░░░░░
+  ░░░░░░░░████▄▄████░░░████░░░░░░░
+  ░░░░░░░░██████████░░░████░░░░░░░
+  ░░░░░░░░████▀▀████░░░████░░░░░░░
+  ░░░░░░░░████░░████░░░████░░░░░░░
+  ░░░░░░░░████░░████░░░████░░░░░░░
+  ░░░░░░░░████░░████░░░████░░░░░░░
+  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  
+<!--
+<script LANGUAGE="JavaScript">
+<!-- Begin
+var scrl = " :) eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiinnnnnnnnnnnnnnnnnnnnnggggggggggggggggggggggggg";
+function scrlsts() {
+ scrl = scrl.substring(1, scrl.length) + scrl.substring(0, 1);
+ document.title = scrl;
+ setTimeout("scrlsts()", 50);
+ }
+
+</script>
+-->
+      
+      
+    
+      
+      
+<!--title in bar of the browser-->
+      <script language=javascript>
+    var title = new MovingTitle(" e e e e e e e i i i i i i i n n n n n n n g g g g g g g ", 110, 18);
+title.init();
+    function MovingTitle(writeText, interval, visibleLetters) {
+    var _instance = {};
+
+    var _currId = 0;
+    var _numberOfLetters = writeText.length;
+
+    function updateTitle() {
+        _currId += 1;
+        if(_currId > _numberOfLetters - 1) {
+            _currId = 0; 
+        }
+
+        var startId = _currId;
+        var endId = startId + visibleLetters;
+        var finalText;
+        if(endId < _numberOfLetters - 1) {
+            finalText = writeText.substring(startId, endId);
+        } else {
+            var cappedEndId = _numberOfLetters;
+            endId = endId - cappedEndId;
+
+            finalText = writeText.substring(startId, cappedEndId) +     writeText.substring(0, endId);
+        }
+
+        document.title = finalText; 
+    }
+
+    _instance.init = function() {
+        setInterval(updateTitle, interval);
+    };
+
+    return _instance;
+}
+</script>
+
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="img/e.png">
+    <link rel="stylesheet" href="css/index.css">
+      <link rel="stylesheet" href="css/media.css">
+    
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script src="js/jquery-2.2.3.min.js"></script>
+          <script src="js/index.js"></script>
+    <script src="https://use.typekit.net/uqz1tyv.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+      
+            
+
+<!--description+name in search engine-->
+      <meta name="title" content="eing.design">
+      <meta name="author" content="Eing Onusa Opastpongkarn">
+      <meta name="description" content="eing's graphic design portfolio">
+<!--description+name-->
+      <meta property="og:title" content="eing.design">
+      <meta property="og:description" content="eing's graphic design portfolio">
+      
+<!--G O O G L E  S T U F F-->
+      <meta name="google" content="nositelinkssearchbox" />
+      <meta name="google" content="notranslate" />
+
+
+  </head>
+
+  <body onLoad="scrlsts()">
+    
+      
+        <div id="top-border" class="them-borders"></div>
+        <div id="left-border" class="them-borders"></div>
+        <div id="bottom-border" class="them-borders"></div>
+        <div id="right-border" class="them-borders"></div>
+
+   <!-- 
+   ▒▒▒▒▒▒▒▒▒▒▒▒ borders
+   ▒▒▒▒▓▒▒▓▒▒▒▒
+   ▒▒▒▒▓▒▒▓▒▒▒▒ 
+   ▒▒▒▒▒▒▒▒▒▒▒▒
+   ▒▓▒▒▒▒▒▒▒▒▓▒
+   ▒▒▓▓▓▓▓▓▓▓▒▒ windows
+   ▒▒▒▒▒▒▒▒▒▒▒▒ -->
+      
+           
+          <div class="movethis" id="bg1" ></div>
+          <div class="movethis" id="bg2" ></div>
+          <div class="movethis" id="bg3" ></div>
+          <div class="movethis" id="bg4" ></div>
+            
+      <span class="movethis" id="colophon"> This website is hard-coded/heart-coded by Eing using <a href="http://brackets.io/"> Brackets</a> and is hosted through <a href="http://github.com/">Github.</a> All texts are typeset in Roboto-mono. </span>
+      
+          <div class="movethis" id="bg5" ></div>
+      
+<!--
+          
+          <div class="movethis" id="pink" ></div>
+          <div class="movethis" id="orange" ></div>
+-->
+
+
+
+<!--        <div id="imaginary-bounding-box-lol">     -->
+   
+      <div id="eingandnav">
+        <div id="eeiinngg"> <p>eing</p></div>
+        <div id="nav">
+          
+            <div id="about"> &ensp; About Eing &nbsp; </div>
+            <div id="contacteing"> &ensp; Contact Eing &nbsp; </div>
+            <div class="miniport"> &nbsp; Eing's process &nbsp;  </div>
+            
+        </div>
+          
+          <div id="projects"></div> 
+        <div id="pj-icon" class="drag"> <img src="img/pj2.png" width="110"></div>
+          
+          <!-- <div id="resume"></div> 
+        <div id="r-icon"> <img src="img/res.png" width="110"></div>
+    </div> -->
+      
+      
+              <div id="stickyandx">
+                <span class="xstickyeing"> x </span>
+                  
+                   <div id="emaileing"> 
+                       <span id="eingonusa">  
+                         eing </span>
+                       <span id="gd">  
+                         graphic designer / San Francisco </span>
+                       
+<!--
+                    <p>(1)415-609-&#36;&#64;&#35;&amp;
+                       <br>
+                       (66)82-446-&#35;&#37;&#64;&#63;</p>
+                  
+-->
+                       
+                  <a href="mailto:eing@cca.edu?subject=Hi there"> eing@cca.edu</a></div>
+                  
+                  
+                <img class="stickyeing" src="img/contacteing.png" width="100"> 
+                  
+               
+              </div>
+           <!--  </div>  -->
+            
+            
+
+        
+            <!-- <div id="eingsresume_lol">
+      <img  src="img/thanksforsavingeingsresume.png"><div class="xclosemex" id="xresume">x</div> </div> -->
+
+          <div id="projects-window" class="click-to-front"> 
+            <div class="bar">
+              <div class="title-window">School Projects</div>
+            </div>
+          <div class="xclosemex" id="xprojects">x</div>
+          <div id="projects-content">
+
+<!--            <p id="filter">  </p>-->
+         
+<!-- george book  -->
+                <div id="gd1-book" class="boxes-for-projects">
+                  <img src="img/gd1/book_cover.jpg" style="width:161%;margin-left:-30%"> </div>
+              
+<!-- keynote  -->
+                  <div id="keynote" class="boxes-for-projects">
+
+                   <img src="img/timebased/woah.png" style="width:100%">
+              </div>
+              
+              
+<!-- boba  -->
+                <div id="gd3-boba" class="boxes-for-projects">
+                  <img class="full"  src="img/gd3/boba-yellow.jpg"></div>
+              
+<!-- TimeBased  -->
+                  <div id="sound" class="boxes-for-projects">
+                  <img src="img/timebased/sound.png" style="width:100%"></div>
+              
+ <!-- 44  -->
+
+                <div id="type1-44" class="boxes-for-projects">
+                    <img class="full" src="img/type1/44_cover.jpg"></div>
+              
+<!-- film  -->
+                  <div id="filmphoto" class="boxes-for-projects">
+                  <img class="full" src="img/filmphoto/nametag.jpg"></div>
+              
+<!-- Milestone  -->
+                  <div id="milestone" class="boxes-for-projects">
+                  <img class="full" src="img/typedesign/mile.png"></div>
+
+<!-- L3r  -->
+                  <div id="lr" class="boxes-for-projects">
+
+                  <video autoplay loop src="img/l3r/l3r_vid.mp4" style="
+                  width: 101%;
+                  margin-left: -50.5%;
+                  position:absolute;
+                  float:left;"></video>
+                  </div>        
+
+
+<!-- Pong_Game  -->
+                  <div id="pong_game" class="boxes-for-projects">
+
+                  <video autoplay loop src="img/in2/pongcover.mov" style="
+                  width:100%;
+                  float:left;"></video>
+                  </div>
+              
+<!-- id trick  -->
+                  <div id="type2-id-trick-vid" class="boxes-for-projects">
+
+                  <video autoplay loop src="img/type2/id_trick_vid.mp4" style="
+                  width:200%;
+                  margin-left:-100%;
+                  position:absolute;
+                  float:left;"></video>
+                  </div> 
+              
+<!-- a block  -->
+                  <div id="type2-book" class="boxes-for-projects">
+                  <img class="full" src="img/type2/book_cover_cover.jpg"></div>
+       
+              
+<!-- NOV  -->
+                  <div id="type1-nov" class="boxes-for-projects">
+                  <img src="img/type1/nov.jpg" style="width:100%"></div>
+
+              
+<!-- Kids  -->
+<!--
+                  <div id="type3-kids" class="boxes-for-projects">
+                  <img class="full" src="img/type3/kids_cover.jpg" style="margin-top:-20%"></div>
+-->
+              
+   
+<!-- ouy  -->
+<!--
+                  <div id="type3-ouy" class="boxes-for-projects">
+                  <img src="img/type3/ouy.jpg" style="width:160%;margin-top:-79%"></div>
+-->
+              
+              
+<!--                N E W -->
+              
+<!--                <div id="gd1-book" class="boxes-for-projects"></div>-->
+
+
+           </div> <!-- project content -->
+          </div> <!-- project window -->
+
+          <!-- down DETAILED PROJECT WINDOWS -->
+          <!-- down DETAILED PROJECT WINDOWS -->
+          <!-- down DETAILED PROJECT WINDOWS -->
+          
+          
+          
+<!-- keynote -->
+
+        <div id="keynote-detail" class="detailed-project-windows" class="click-to-front"> 
+            <div class="bar">
+              <div class="title-window">App - app store - app - app store</div>
+            </div>
+          <div class="xclosemex" id="xkeynote">x</div>
+          <div class="detailed-project-content" style="overflow-x:hidden;">
+              
+              <div id="keynote_video">
+              <iframe  src="https://player.vimeo.com/video/216101350?loop=1&color=ffffff&title=0&byline=0&portrait=0" width="970" height="auto" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+              
+              <p> Description is on its way. <br>
+              or maybe I can let the piece speak for itself. </p>
+              
+              <p>Year: Spring 2017 <br>
+            Course: Time based media <br> 
+            Instructor: Christoph Steger <br> <br> </p>
+              
+            </div>
+            </div>
+              
+
+<!-- George book -->
+
+          <div id="gd1-book-detail" class="detailed-project-windows" class="click-to-front"> 
+            <div class="bar">
+              <div class="title-window">Type book</div>
+            </div>
+          <div class="xclosemex" id="xgd1-book">x</div>
+          <div class="detailed-project-content">
+
+             <p style="position:absolute;">  </p>
+
+         
+            <img id="book_cover_grey" src="img/gd1/book_cover_grey.jpg">
+
+            <img id="book2clean" src="img/gd1/book2clean.jpg">
+
+            <p id="typebook_bullets">
+                
+           A Typography book <br><br>
+            This book is the first book I’ve ever made. It showcases 3 type specimens which were all hand drawn (no tracing) with the help of grid papers. This project challenged me to experiment with different book layouts, typography explorations and book binding techniques.
+<br><br> 
+            —————<br><br>
+
+
+            Year: Fall 2015 <br>
+            Course: Graphic Design 1 (foundation) <br> 
+            Instructor: George MacCalman <br> <br> </p>
+
+            
+
+            <img id="book9"  src="img/gd1/book9.jpg">
+              
+
+            <img id="book12" src="img/gd1/book12.jpg">
+
+            <img id="handdrawn1" src="img/gd1/handdrawn1.jpg">
+
+            <img id="handdrawn2" src="img/gd1/handdrawn2.jpg">
+
+            <img id="handdrawn3" src="img/gd1/handdrawn3.jpg">
+
+
+            <img id="book11" src="img/gd1/book11.png">
+
+            <img id="book3" src="img/gd1/book3.jpg">
+
+           </div> <!-- detailed project content -->
+          </div> <!-- detailed project window -->
+          
+<!-- lr3 -->
+
+          <div id="lr-detail" class="detailed-project-windows" class="click-to-front"> 
+            <div class="bar">
+              <div class="title-window"> L3R Exhibition poster</div>
+            </div>
+          <div class="xclosemex" id="xlr">x</div>
+          <div class="detailed-project-content" style="overflow-x:hidden;">
+              
+              <video autoplay loop id="lr_vid" >
+              <source src="img/l3r/l3r_vid.mp4" > 
+              </video>
+              
+              <div> <img id="lr_img_process" src="img/l3r/l3r_process.png"></div>
+              
+              <div id="lr_img"> <img src="img/l3r/l3r_poster.jpg"></div>            
+             
+              <p id="lrtext"> 
+            Level 3 Review exhibition poster <br><br> 
+           This is a poster and a short animated poster I designed for an exhibition showcasing Graphic Design works done by level 3 students at California College of the Arts. The animated poster was made using Keynote. <br><br> 
+        —————<br><br>
+
+
+            Year: Spring 2017 <br></p>
+              
+            
+
+            </div> <!-- detailed project content -->
+          </div> <!-- detailed project window -->
+
+<!-- 44 -->
+
+        <div id="type1-44-detail" class="detailed-project-windows" class="click-to-front"> 
+            <div class="bar">
+              <div class="title-window">4x4</div>
+            </div>
+          <div class="xclosemex" id="xtype1-44">x</div>
+          <div class="detailed-project-content" style="overflow-x:hidden;">
+              
+              <img src="img/type1/44orginal.png" id="fouroriginal">
+              
+              <img id="fourfour" src="img/type1/44.png">
+              
+
+
+
+<!--
+            <img class="minwidth270" class="floatright" src="img/type1/hh.png" style="
+            width: 75%;
+            margin: 21% 0% 0% -22%;
+            position: absolute;
+            z-index:-1;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);">
+-->         
+            
+              
+              <p id="type_as_img" > 
+           
+           Type as image : 4x4<br><br>
+            
+                  The main idea of the project is to explore shapes and forms of physical types.
+                  We went out in the world and looked closely at each 3D types to think about what materials they are made out of
+                  and how different materials create different textures.
+                  <br><br> 
+                  
+
+            —————<br><br>
+
+            Year: Fall 2015 <br>
+            Course: Typography 1 (form) <br> 
+            Instructor: Karin Myint <br> <br> </p>
+              
+              <img src="img/type1/usa.jpg" id="usa">
+              
+              <img id="fourfourthree" src="img/type1/443.png">
+              
+
+
+          </div> <!-- detailed project content -->
+          </div> <!-- detailed project window -->
+
+<!-- BOBABOBA -->
+
+          <div id="gd3-boba-detail" class="detailed-project-windows" class="click-to-front"> 
+            <div class="bar">
+              <div class="title-window"> Bobaboba</div>
+            </div>
+          <div class="xclosemex" id="xgd3-boba">x</div>
+          <div class="detailed-project-content" style="overflow-x:hidden;">
+
+          <img id="boba_head2" src="img/gd3/boba_head2.jpg">
+
+            <img id="poster_system" src="img/gd3/poster_system.png">
+
+            <p class="floatleft" id="boba-text">
+
+           
+           Bobaboba <br><br>
+                
+            This is an event branding project which I designed a branding system for a boba store opening.
+            This is a semester-long project that involves in numbers of researches, revisions and experimentations.
+          
+<!--            The letter B used in a logo is from a type experimental exercise where we got to create typefaces that captures our object's essense. The whole typeface was written using a white liquid glue to eco back to the nature of "milk" tea. -->
+         
+                <br><br>—————<br><br>
+                
+            
+
+            Year: Fall 2016 <br>
+            Course: Graphic Design 3 (integration) <br> 
+            Instructor: Tim Belonax <br> <br> </p>
+
+
+              
+              <p class="clearleft" class="floatleft" style="
+            width:80%;
+            padding-left: 10%;
+            margin-top: -2%;">
+
+            Promotional video for the event </p>
+              
+              <div id="boba-mov">
+              <iframe src="https://player.vimeo.com/video/216101169?title=0&byline=0&portrait=0" width="980" height="auto" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                  </div>
+              
+<!--            <video class="floatleft" id="boba-mov" controls  src="img/gd3/boba.mov"></video>-->
+
+            <p class="clearleft" class="floatleft" style="
+            width: 75%;
+            padding: 3% 0% 10% 10%">
+
+           
+           A video was initially planned to be done in After Effects to get a nice, smooth animation. 
+         <br> However, I thought it'd be interesting to see if I added a hint of stop-motion feel to it. 
+          <br>So this was created using Adobe Illustrator. Each frame is one layer.<br><br>
+                
+            </p>
+
+
+            <p class="clearleft" class="floatleft" style="
+            width:40%;
+            padding-left: 10%;
+            margin-top: -2%;">
+
+           Type experimental exercise </p>
+
+           <img  id="cup" src="img/gd3/cup.jpg">
+
+              <p class="clearleft" class="floatleft" style="
+            width: 80%;
+            padding: 10% 0% 1% 10%;">
+
+            Image making to be used as a mock up </p>
+              
+            <img id="handbobagif" src="img/gd3/handboba.gif">
+
+              <p class="clearleft" class="floatleft" style="
+            width:80%;
+            padding-left: 10%;
+            padding: 10% 0% 1% 10%;">
+
+            Promotional poster and logo variations </p>
+              
+            <img class="poster_alt" class="floatleft"  src="img/gd3/poster1.jpg">
+
+
+            <img class="poster_alt" src="img/gd3/poster2.jpg">
+            <img class="poster_alt" src="img/gd3/poster3.jpg">
+            <img class="poster_alt" src="img/gd3/poster4.jpg">
+            <img class="poster_alt" src="img/gd3/poster5.jpg" style="clear:left;">
+            <img class="poster_alt" src="img/gd3/poster6.jpg">
+            <img class="poster_alt" src="img/gd3/poster7.jpg">
+            <img class="poster_alt" src="img/gd3/poster8.jpg">
+            <img id="poster_alt" src="img/gd3/poster_alt.png">
+
+            <p class="clearleft" class="floatleft" style="
+            width:40%;
+            padding-left: 10%;
+            padding: 10% 0% 1% 10%;">
+
+            A website mockup </p>
+              
+            <img id="webmockup" src="img/gd3/webmockup.jpg" >
+
+            <div id="boba_vid_sec"> 
+
+            <p class="clearleft" class="floatleft" style="
+            width:40%;
+            padding-left: 10%;
+            padding: 10% 0% 1% 10%;">
+
+            Video process </p>
+
+            <img id="vidgif" src="img/gd3/vid.gif">
+
+             </div>
+
+
+          
+
+            
+
+
+            </div> <!-- detailed project content -->
+          </div> <!-- detailed project window -->
+          
+          
+          <!-- Milestone -->
+
+          <div id="milestone-detail" class="detailed-project-windows" class="click-to-front"> 
+            <div class="bar">
+              <div class="title-window"> Asdfghjkl.psd</div>
+            </div>
+          <div class="xclosemex" id="xmilestone">x</div>
+          <div class="detailed-project-content" style="overflow-x:hidden;">
+
+           <img src="img/typedesign/milestone_poster.jpg">
+              
+              <p id="milestone_text"> Milestone, a typeface I designed while taking Type Design class. This is a "type specimen" poster. <br><br> <strong>Description, process, sketches and a fancy text field for you to type in are on their way.</strong> <br><br>
+              Year: Spring 2017 <br>
+            Course: Type Design <br> 
+            Instructor: Rod Cavazos <br> <br></p>
+            
+
+            </div> <!-- detailed project content -->
+          </div> <!-- detailed project window -->
+
+
+<!-- FILM PHOTO -->
+
+          <div id="filmphoto-detail" class="detailed-project-windows" class="click-to-front"> 
+            <div class="bar">
+              <div class="title-window"> Asdfghjkl.psd</div>
+            </div>
+          <div class="xclosemex" id="xfilmphoto">x</div>
+          <div class="detailed-project-content" style="overflow-x:hidden;">
+
+            <img id="filmhead" src="img/filmphoto/filmheader.jpg">
+            
+            <div id="filmsec">
+            <img id="photo1" src="img/filmphoto/photo1.jpg">
+            <img id="photo3" src="img/filmphoto/photo2.jpg">
+            <img id="photo3" src="img/filmphoto/photo3.jpg">
+                
+<!--
+                <img class="photo3abc" src="img/filmphoto/photo3a.jpg">
+                <img class="photo3abc" src="img/filmphoto/photo3b.jpg">
+                <img class="photo3abc" src="img/filmphoto/photo3c.jpg">
+--> 
+                <img id="fix" src="img/filmphoto/fixx.jpg">
+                
+            <p id="filmtext"> 
+
+           asdfghjkl.psd : Before Photoshop era<br><br>
+           This is the project I did in a film photography course 
+           during my first semester at California College of the Arts. It was my first time ever using a film camera, developing films and printing in the darkroom.
+            I decided to manipulate these photos in the dark room to make them look as if they were done in photoshop. 
+                After hours and hours spent in the darkroom trying to get everything right, I'm very much happy with the results.
+                
+                <br><br>—————<br><br>
+            Year: Fall 2014 <br>
+            Course: Photography Tools 1 (black and white) <br> 
+            Instructor: Suesan Cirilato  </p>
+              
+    
+                
+                <p class="floatleft" style="
+            width:44%;
+            padding: 10% 0% 2% 22.5%;
+            clear: left;
+            color: white;">
+
+           
+           Test prints <br> </p>
+                
+                <img id="photo3gif" src="img/filmphoto/photo3.gif">
+                
+                 <p class="floatleft" style="
+            width:44%;
+            padding: 10% 0% 2% 22.5%;
+            clear: left;
+            color: white;">
+
+           
+           Plans and sketches <br> </p>
+                
+                <img id="photo3gif2" src="img/filmphoto/filmphotosketches.gif">
+
+                
+          </div> <!--filmsec-->
+
+            </div> <!-- detailed project content -->
+          </div> <!-- detailed project window -->
+
+<!-- KIDS -->
+
+          <div id="type3-kids-detail" class="detailed-project-windows" class="click-to-front"> 
+            <div class="bar">
+              <div class="title-window"> Overuse of tech in kids | Fall 2016</div>
+            </div>
+          <div class="xclosemex" id="xtype3-kids">x</div>
+          <div class="detailed-project-content" style="overflow-x:hidden;">
+              <div id="kids_head_color"></div>
+               <img id="kids_illu" src="img/type3/kids_illu.png">
+              
+              <p id="kidstext"> 
+
+           The overuse of technology in children<br><br>
+           This project challenged us to create something to address social issues so I picked to focus on the overuse of technology in children. Based on the research, I decided to create a website mockup displaying information that might be helpful for modern parents or those out there who are concerned about this issue.
+                  <br><br>—————<br><br>
+            Year: Fall 2016 <br>
+            Course: Typography 3 (information systems) <br> 
+            Instructor: David Asari  </p>
+              
+              <img id="pageone" src="img/type3/pageone.svg">
+             
+
+            </div> <!-- detailed project content -->
+          </div> <!-- detailed project window -->
+
+<!-- BLOCK BOOK -->
+
+          <div id="type2-book-detail" class="detailed-project-windows" class="click-to-front"> 
+            <div class="bar">
+              <div class="title-window"> Ababdababab</div>
+            </div>
+          <div class="xclosemex" id="xtype2-book">x</div>
+          <div class="detailed-project-content" style="overflow-x:hidden;">
+
+          <img class="full" src="img/type2/book1head.jpg" style="
+          margin: 0% 0% 0% 0%;
+          border-bottom: 6px solid black;">
+
+<!--
+            <p class="floatleft" style="
+            width:90%;
+            padding-bottom: 3%;
+            padding-top:4%;
+            padding-left:10%;"> 
+           
+-->
+          <p class="floatleft" id="book_text"> 
+           A book about design a book about a block <br><br>
+            The project we were challenged to do was called "a book about a block". We got to pick one block in San Francisco and create a book out of it. We went through numbers of processes to create the contents. Halfway through the semester, I realized how interesting these processes were and wanted to document them so I made a quick turn and here it is: a book about designing a book about a block.  <br><br>
+                
+            I discovered my love for metadata, bold design and #FFC42C while working on this project and I'm glad that I took a full advantage of being in school by blending the assignment and turning it into my own. <br><br> 
+<!--
+                
+            This is the last project I've used Helvetica — ever<br><br> --> 
+              —————<br><br>
+
+
+
+            Year: Spring 2016 <br>
+            Course: Typography 2 (form/content) <br> 
+            Instructor: Rachel Berger <br> <br> </p>
+
+            
+
+            <img  class="full" src="img/type2/dumpline.jpg" style="
+            margin: 0% 0% 4% 0%;
+            border-top: 6px solid black;
+            float: left;">
+
+            <img class="floatleft" src="img/type2/book1111.jpg" style="
+            width: 38%;
+            margin: 0% 0% 6% 9%;">
+
+            <img class="floatleft" src="img/type2/flap1by1.jpg" style="
+            width: 38%;
+            margin: 0% 0% 6% 8%;">
+
+            <img  class="full" src="img/type2/dumpline.jpg" style="
+            margin: 0% 0% 4% 0%;
+            border-top: 6px solid black;
+            float: left;">
+
+            <img class="floatleft" src="img/type2/bookpostit.jpg" style="
+            width: 26.5%;
+            margin: -3.5% 0% 0% 10%;">
+              
+            <img class="floatleft" src="img/type2/blockbook.gif" style="
+            width: 49%;
+            margin: 0% 0% 0% 2%;">
+              
+              <img  class="full" src="img/type2/dumpline.jpg" style="
+            margin: 0% 0% 0% 0%;
+            border-top: 6px solid black;
+            float: left;">
+
+
+            <img class="floatleft" src="img/type2/book5.jpg" style="
+            width: 20%; 
+            clear:left;
+
+            margin: 5% 0% 10% 15%;
+            ">
+
+            <img class="floatleft" src="img/type2/book3.jpg" style="
+            width: 20%;
+            margin: 5% 0% 10% 5%;
+            ">
+
+
+            <img class="floatleft" src="img/type2/book2.jpg" style="
+            width: 20%;
+            margin: 5% 0% 10% 5%;
+            ">
+
+         
+
+
+            </div> <!-- detailed project content -->
+          </div> <!-- detailed project window -->
+
+<!-- NOVEMBER -->
+
+          <div id="type1-nov-detail" class="detailed-project-windows" class="click-to-front"> 
+            <div class="bar">
+              <div class="title-window"> November:zZZ</div>
+            </div>
+          <div class="xclosemex" id="xtype1-nov">x</div>
+          <div class="detailed-project-content" style="overflow-x:hidden;">
+             
+              <img id="november" src="img/type1/november.jpg"> 
+              
+              
+              <img id="novemgif" src="img/type1/novem.gif">
+             
+              <p id="novtext"> 
+           This project is based on the research of our birth month. I found out that November is a National Sleep Comfort month plus my birthday, the 30th of November, is a STAY HOME BECAUSE YOU’RE WELL DAY and this is the result. It was fun discovering new ways to experiment with cutting and sewing fabric. <br><br> 
+        —————<br><br>
+
+
+            Year: Fall 2015 <br>
+            Course: Typography 1 (form) <br> 
+            Instructor: Karin Myint <br> <br> </p>
+              
+               <img id="nov_sketch" src="img/type1/nov_sketch.jpg"> 
+              
+              
+              
+              
+              
+
+            </div> <!-- detailed project content -->
+          </div> <!-- detailed project window -->
+      
+<!-- sound -->
+
+          <div id="sound-detail" class="detailed-project-windows" class="click-to-front"> 
+            <div class="bar">
+              <div class="title-window"> Sound journey</div>
+            </div>
+          <div class="xclosemex" id="xsound">x</div>
+          <div class="detailed-project-content" style="overflow-x:hidden;">
+              
+<!--
+              <video controls id="sound_vid" >
+              <source src="img/timebased/sound.mov" > 
+              </video>
+-->
+              
+              <div id="sound_vid">
+              <iframe src="https://player.vimeo.com/video/216100422?title=0&byline=0&portrait=0" width="1000" height="563" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              </div>
+             
+              <p id="soundtext"> 
+            Sound journey <br><br> 
+           For this project, I created a 30-second abstract visualization of a sound piece that we were tasked to generate. The original tracks were edited using Adobe Audition and all the visuals were done in Adobe After Effects. This project serves as an Adobe After Effects exploration. <br><br> 
+        —————<br><br>
+
+
+            Year: Spring 2017 <br>
+            Course: Time based media <br> 
+            Instructor: Christoph Steger <br> <br> </p>
+              
+            
+
+            </div> <!-- detailed project content -->
+          </div> <!-- detailed project window -->
+
+<!-- ID TRICK -->
+
+          <div id="type2-id-trick-vid-detail" class="detailed-project-windows" class="click-to-front"> 
+            <div class="bar">
+              <div class="title-window"> 
+                vabababdababab</div>
+            </div>
+          <div class="xclosemex" id="xtype2-id-trick-vid">x</div>
+          <div class="detailed-project-content" style="overflow-x:hidden;">
+              
+              <img id="id_trick_poster" src="img/type2/id_trick_poster.png">
+              
+            <div id="idgrey"></div>
+
+              <video autoplay loop src="img/type2/id_trick_vid.mp4" id="id_trick"></video>
+              
+              <video autoplay loop src="img/type2/printing_vid.mp4" id="id_trick"></video>
+              
+              <video autoplay loop src="img/type2/save_vid.mp4" id="id_trick"></video>
+              
+              <video autoplay loop src="img/type2/bookelements_vid.mp4" id="id_trick"></video>
+                
+           <p id="idtext"> 
+            Videos about a book about designing a book about a block<br><br> 
+           These short videos are extensions of "a book about designing a book about a block" project. The idea is to create multiple short-length videos as a preview of a tutorial video on how to make a book about designing a book about a block. All were done in Adobe After Effects.<br><br> 
+        —————<br><br>
+
+
+            Year: Spring 2016 <br>
+            Course: Typography 2 (form/content) <br> 
+            Instructor: Rachel Berger <br> <br> </p>
+                
+
+        </div> <!-- detailed project content -->
+          </div> <!-- detailed project window -->
+              
+              
+              
+              
+              
+<!-- PONG TYPEFACE -->
+
+          <div  id="pong_game-detail" class="detailed-project-windows" class="click-to-front"> 
+            <div class="bar">
+              <div class="title-window"> Pong webface</div>
+            </div>
+          <div class="xclosemex" id="xpong_game">x</div>
+          <div class="detailed-project-content" style="overflow-x:hidden;">
+             
+              <video autoplay loop id="pong_game_vid" >
+              
+              <source src="img/in2/ponghead.mov" > 
+              </video>
+              
+             
+              <p id="novtext"> 
+                  Pong CSS typeface<br><br> 
+           This project is to create a typeface using only HTML and CSS with a minimum of 2 visual states and a website to display a complete typeface in context. So I designed this typeface that only consists of squares and rectangles to keep the minimal aesthetic and similar to this old computer game "Pong".   <br><br> 
+        —————<br><br>
+
+
+            Year: Fall 2016 <br>
+            Course: Interactive 2 <br> 
+            Instructor: Chris Hamamoto<br> <br> </p>
+              
+              <video controls id="pong_web" >
+              
+              <source src="img/in2/pong_web.mov"> 
+              </video>
+                    
+
+            </div> <!-- detailed project content -->
+          </div> <!-- detailed project window -->
+              
+
+<!-- 
+src="img/type2/printing_vid.mp4
+src="img/type2/bookelements_vid.mp4
+src="img/type2/save_vid.mp4
+ -->
+
+
+
+          <!-- UP DETAILED PROJECT WINDOWS -->
+          <!-- UP DETAILED PROJECT WINDOWS -->
+          <!-- UP DETAILED PROJECT WINDOWS -->
+
+
+
+        <!-- ///////// -->
+        
+
+          <!-- /////hey :)//// -->
+        
+          <div id="about-window">   
+              
+          <div class="xclosemex" id="xabout">x</div>
+          <div id="about-content">
+
+              
+              Eing is a graphic design student at  <span class="links_in_about"><a href="http://www.cca.edu"> California College of the Arts</a></span> in San Francisco. 
+              
+              She is interested in a wide range of distinct creative practices and is curious to explore new aspects of design fields.
+              
+              She loves food and she misses <span class="links_in_about"><a href="https://www.google.com/search?q=bangkok+thailand&oq=bangkok+thailand&aqs=chrome.0.0l6.3562j0j4&sourceid=chrome&ie=UTF-8#q=+bangkok%2C+thailand&*"> home</a></span>. 
+              Check out her
+              <span class="links_in_about">
+                  <a href="https://www.linkedin.com/in/eing-o" id="linkedin"> Linkedin</a></span>
+
+             <!--      
+              or her <span class="links_in_about" id="r_in_about">
+                 resume</span>   -->here.
+            
+          </div> </div> 
+
+
+
+
+<!--        </div> //imaginary-->
+        
+  <!--   
+  ──────▄▀▄─────▄▀▄   windows
+  ─────▄█░░▀▀▀▀▀░░█▄
+  ─▄▄──█░░░░░░░░░░░█──▄▄  icons
+  █▄▄█─█░░▀░░┬░░▀░░█─█▄▄█ -->
+
+
+<!--
+         <div id="contact"></div> 
+        <div id="c-icon"> <img src="img/ct.png" width="110"></div>
+-->
+
+      <!--   +++++++++++++ -->
+
+      <div id="leave-stay-window" class="click-to-front">
+        <div id="leave-stay-content">
+          <p> But it's on Instagram though...</p>
+
+          <div id="dont-go"> 
+              <div id="bye"> 
+                <a href="http://instagram.com/eing.design" id="go"> GO </a>
+              </div>
+          </div>
+
+          <div id="stay"> 
+              <div id="iwantyoutostay"> STAY </div> 
+          </div>
+        </div>
+          
+      </div>
+
+      <!-- +++++++++++++++ -->
+      
+
+  </body>
+              
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+
+
+  </html> 
