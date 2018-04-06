@@ -12,12 +12,12 @@ body { background-color: #000000;
 
 ::selection {
   color: white;
-  background-color: red;
+  background-color: black;
 }
 
 ::-moz-selection{
   color: white;
-  background-color: red;
+  background-color: black;
 }
 
 
@@ -81,27 +81,27 @@ body { background-color: #000000;
 
 }
 
-#bg1 { background-color: rgb(229, 229, 229);
+#bg1 { background-color: #ffffff;
     z-index: 0;
 }
 
-#bg2 { background-color: #ffc42c;
+#bg2 { background-color: #ffdddd;
      z-index: -1;
 }
 
-#bg3 { background-color: #ff1530;
+#bg3 { background-color: #fff5da;
      z-index: -2;
 }
 
 
 /*#96d9e5*/
-#bg4 { background-color: #a5dbe2;
+#bg4 { background-color: #e3f2ff;
      z-index: -3;
 }
 
 #colophon { 
     color: black;
-   font-family: 'roboto-mono', monospace;
+   font-family: 'faroWeb', Sans-Serif;
     font-size: 18px;
     line-height: 30px;
    font-weight: 500;
@@ -127,7 +127,7 @@ body { background-color: #000000;
 }
 
 
-#bg5 { background-color: white;
+#bg5 { background-color: #ffc42c;
      z-index: -5;
 }
 
@@ -200,7 +200,7 @@ body { background-color: #000000;
 #xresume {
   margin-top: 20px;
   position: relative;
-  font-family: 'roboto-mono', monospace;
+  font-family: 'faroWeb', Sans-Serif;
   font-weight: 500;
   color: black;
   font-size: 45px;
@@ -218,7 +218,6 @@ body { background-color: #000000;
   width: 85%; 
   height: 685px;
   background-color: white;
-/*  border-top: black solid 7px;*/
   border-bottom: black solid 7px;
   border-left: black solid 7px;
   border-right: black solid 7px;
@@ -227,24 +226,8 @@ body { background-color: #000000;
   top: 3.8%;
   left: 7.5%;
   min-width: 300px;
-/*  overflow: hidden;*/
 
  }
-/*
- #resume-window {
-  width: 20%; 
-  padding-bottom: 45%;
-  height: 0;
-  background-color: white;
-  border-bottom: black solid 7px;
-  border-left: black solid 7px;
-  border-right: black solid 7px;
-  z-index: 42;
-  top: 40px;
-  left: 20%;
-  position: fixed;
- }
-*/
 
  .bar {
   width: 100%;
@@ -257,8 +240,8 @@ body { background-color: #000000;
  }
 
  .xclosemex {
-  font-family: 'roboto-mono', monospace;
-  font-weight: 800;
+  font-family: 'faroWeb', Sans-Serif;
+  font-weight: 900;
   color: black;
   float: right;
   padding-right: 6px;
@@ -269,7 +252,7 @@ body { background-color: #000000;
 
  .title-window {
   font-size: 16px;
-  font-family: 'roboto-mono', monospace;
+  font-family: 'faroWeb', Sans-Serif;
   font-weight: 800;
   margin-top: -2px;
   color: black;
@@ -306,7 +289,7 @@ body { background-color: #000000;
     padding: 6% 1% 3% 5%;
     width: 80%;
     color: black;
-    font-family: 'roboto-mono', monospace;
+    font-family: 'faroWeb', Sans-Serif;
    font-weight: 500;
 }
 
@@ -315,7 +298,7 @@ body { background-color: #000000;
     padding: 6% 1% 3% 5%;
     width: 80%;
     color: black;
-    font-family: 'roboto-mono', monospace;
+    font-family: 'faroWeb', Sans-Serif;
    font-weight: 500;
 }
 */
@@ -387,7 +370,7 @@ body { background-color: #000000;
     padding: 4% 1% 1% 5%;
     width: 80%;
     color: black;
-    font-family: 'roboto-mono', monospace;
+    font-family: 'faroWeb', Sans-Serif;
     font-weight: 500;
     line-height: 1.5em;
     min-width: 230px;
@@ -407,7 +390,7 @@ body { background-color: #000000;
   bottom: 0px; 
   left: 55px;
     position: relative;
-  font-family: 'roboto-mono', monospace;
+  font-family: 'faroWeb', Sans-Serif;
   font-weight: 500;
   color: black;
   font-size: 45px;
@@ -440,7 +423,7 @@ body { background-color: #000000;
   background-color: transparent;
   word-wrap: break-word;
   position: fixed;
-  font-family: 'roboto-mono', monospace;
+  font-family: 'faroWeb', Sans-Serif;
   font-weight: 500;
   color: black;
   font-size: 16px;
@@ -470,7 +453,7 @@ body { background-color: #000000;
 /*
 #about-content a, a:visited {
    color: black;
-   font-family: 'roboto-mono', monospace;
+   font-family: 'faroWeb', Sans-Serif;
    font-weight: 500;
    font-size: 1.4em;
    opacity: 1;
@@ -480,7 +463,7 @@ body { background-color: #000000;
 
 #about-content a:hover, a:hover:visited {
    color: #ffc42c;
-   font-family: 'roboto-mono', monospace;
+   font-family: 'faroWeb', Sans-Serif;
    font-weight: 500;
    font-size: 1.4em;
    text-decoration: none;
@@ -948,21 +931,8 @@ body { background-color: #000000;
 █▄▄█─█░░▀░░┬░░▀░░█─█▄▄█*/
 
 
-
-/*#eing-is { 
-  height: 52px;
-  width: 300px;
-  position: fixed;
-  z-index: 2;
-  left: 100px;
-  top: 85px;
-  mix-blend-mode: difference;
-}*/
-
-
-
 .stickyeing {
-  width: 570px;
+  width: 400px;
   bottom: 0px;
   right: 0px;
   z-index: 10;
@@ -974,7 +944,7 @@ body { background-color: #000000;
   bottom: 586px; 
   right: 160px;
   position: fixed;
-  font-family: 'roboto-mono', monospace;
+  font-family: 'faroWeb', Sans-Serif;
   font-weight: 500;
   letter-spacing: -2px;
   color: black;
@@ -999,7 +969,7 @@ body { background-color: #000000;
     bottom: 480px;
     right: 325px;
     position: fixed;
-  font-family: 'roboto-mono', monospace;
+  font-family: 'faroWeb', Sans-Serif;
   font-weight: 500;
   color: black;
   font-size: 85px;
@@ -1012,7 +982,7 @@ body { background-color: #000000;
     bottom: 430px;
     right: 307px;
     position: fixed;
-  font-family: 'roboto-mono', monospace;
+  font-family: 'faroWeb', Sans-Serif;
   font-weight: 500;
   color: black;
   font-size: 10.3px;
@@ -1025,7 +995,7 @@ body { background-color: #000000;
   bottom: 563px; 
   left: 1120px;
   position: fixed;
-  font-family: 'roboto-mono', monospace;
+  font-family: 'faroWeb', Sans-Serif;
   font-weight: 800;
   color: black;
   font-size: 10px;
@@ -1040,7 +1010,7 @@ body { background-color: #000000;
   bottom: 445px; 
   right: 397px;
   position: fixed;
-  font-family: 'roboto-mono', monospace;
+  font-family: 'faroWeb', Sans-Serif;
   font-weight: 500;
   color: black;
   font-size: 15px;
@@ -1055,148 +1025,78 @@ body { background-color: #000000;
     color: white;
 }
 
-
-#eingandnav {
-    position: absolute;
-    top: 22.1vh;
-    left: 9vw; 
-    box-shadow: 10px 10px black;
-}
-
-#eeiinngg {
-    width: 255px;
-    border: solid black 10px;
-    padding: 5px;
-    font-size: 100px;
-    font-family:'roboto-mono', monospace;
+#einglogo img{
+	width: 270px;
     z-index:100;
-    letter-spacing: -5px;
-    font-weight:500;
     cursor: move;
     opacity: 1;
-    color: #000000;
-
+	position: absolute;
+    top: 22.1vh;
+    right: -80.5vw; 
+	cursor: move;
 }
 
-#eeiinngg p{
-    height: 130px;
-    margin-top: -30px;
-    margin-left: 10px;
+#statement img{
+	width: 450px;
+    z-index:100;
+    cursor: move;
+    opacity: 1;
+	position: absolute;
+    bottom: -78vh;
+    left: -175px; 
+	cursor: move;
+	box-shadow: black 3px 3px 7px -2px;
 }
 
-#nav {
-    width: 255px;
-    margin-top: -10px;
-    line-height: 30px;
-    height: auto;
-    right: 6%;
-    padding: 5px;
-    border: solid black 10px;
-}
-
-#projects {
- position: absolute;
-  width: 110px;
-  height: 110px;
-  background-color: transparent;
-  cursor: pointer;
-  z-index: 4;
-    top: 285px;
-}
-
-
-#pj-icon { 
-  position: absolute;
-  z-index: 0;
-  -webkit-filter: grayscale(100%); 
-  filter: grayscale(100%);
-    top: 285px;
+.theicons {
+	position: absolute;
+	cursor: pointer;
     mix-blend-mode: multiply;
-}
-
-#resume {
- position: absolute;
-  width: 110px;
-  height: 110px;
-  background-color: transparent;
-  cursor: pointer;
-  z-index: 4;
-    top: 285px;
-    left: 100px;
-}
-
-#r-icon { 
-  position: absolute;
-  z-index: 0;
-  -webkit-filter: grayscale(100%); 
-  filter: grayscale(100%);
-    top: 285px;
-    left: 100px;
-    mix-blend-mode: multiply;
-}
-
-#contact {
-  width: 110px;
-  height: 110px;
-  position: fixed;
-  top: 490px;
-  right: 40px;
-  background-color: transparent;
-  cursor: pointer;
-  z-index: 4;
+	z-index: 4;
+	 -webkit-filter: drop-shadow(4px 4px 5px rgba(0,0,0,0.3));      
+    filter: drop-shadow(4px 4px 5px rgba(0,0,0,0.3));  
+    bottom: -74vh;
+    right: -80.5vw;
 }
 
 
-#c-icon { 
-  position: fixed;
-  z-index: 0;
-  top: 490px;
-  right: 40px;
-  -webkit-filter: grayscale(100%);   /*Safari 6.0 - 9.0*/ 
-    filter: grayscale(100%);
+#works{
+	width: 118px;
+	margin-right: 230px;
+/*
+	top: 63.3vh;
+	left: 59vw;
+*/
+}
+
+#about{ 
+	width: 79px;
+	margin-right: 130px;
+/*
+	top: 63.3vh;
+	left: 68.7vw;
+*/
+}
+
+#contacteing{
+	width: 102px;
+/*
+	top: 60.2vh;
+	left: 76vw;
+*/
 }
 
 
-#about
-{
-  font-family: 'roboto-mono', monospace;
-  font-weight: 500;
-  color: black;
-  font-size: 15px;
-  cursor: help;
-  position: relative;
-  z-index: 20;
-
-    
-/*  border: solid black 3.5px;*/
-/*  padding: 5.6px;*/
-}
-
-
-#contacteing {
-  font-family: 'roboto-mono', monospace;
-  font-weight: 500;
-  color: black;
-  font-size: 15px;
-  cursor: context-menu;
-  position: relative;
-  z-index: 20;
-
-/*  border: solid black 3.5px;*/
-/*  padding: 5.6px;*/
-}
-
-#about:hover, #contacteing:hover, .miniport:hover {
-/*    border-bottom: solid black 3.5px;*/
-    color: white;
-    background-color: black;
+/*
+#about:hover, #contacteing:hover, #works:hover {
+    border-bottom: solid black 3.5px;
+    background-color: #848484;
 
 }
-
-
+*/
 
 .miniport, .miniport:visited {
-  font-family: 'roboto-mono', monospace;
+  font-family: 'faroWeb', Sans-Serif;
   font-weight: 500;
   color: black;
   font-size: 15px;
@@ -1206,24 +1106,17 @@ body { background-color: #000000;
   z-index: 12;
   width: auto;
 
-/*   border: solid black 3.5px;*/
-/*  padding: 5.6px;*/
 }
 
 
-
-
-
-
-#about:active, .miniport:active, .miniport:visited:active, #contacteing:active {
+#about:active, .miniport:active, #statement:visited:active, #contacteing:active {
   color: #ffc42c;
 }
 
 
-
 h1 {  /*width: 270px;*/
       width: 40%;
-      font-family: 'roboto-mono', monospace;
+      font-family: 'faroWeb', Sans-Serif;
       font-weight: 500;
       color: black;
       font-size: 25px;
@@ -1238,7 +1131,6 @@ h1 {  /*width: 270px;*/
 }
 
 
-/*L E A V E   OR  S T A Y*/
 /*L E A V E   OR  S T A Y*/
 /*L E A V E   OR  S T A Y*/
 /*L E A V E   OR  S T A Y*/
@@ -1274,7 +1166,7 @@ h1 {  /*width: 270px;*/
 }
 
 #leave-stay-content p {
-  font-family: 'roboto-mono', monospace;
+  font-family: 'faroWeb', Sans-Serif;
   font-weight: 500;
   color: black;
   font-size: 25px;
@@ -1299,7 +1191,7 @@ h1 {  /*width: 270px;*/
   width: 100%;
   height: auto;
   color: black;
-  font-family: 'roboto-mono', monospace;
+  font-family: 'faroWeb', Sans-Serif;
   font-weight: 800;
   font-size: 55px;
   position: absolute;
@@ -1322,7 +1214,7 @@ h1 {  /*width: 270px;*/
 #bye a{
   width: 100%;
   height: auto;
-  font-family: 'roboto-mono', monospace;
+  font-family: 'faroWeb', Sans-Serif;
   font-weight: 800;
   font-size: 60px;
   position: absolute;

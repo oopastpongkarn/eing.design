@@ -1,99 +1,7 @@
-// this thing makes the windows pop when doubleclicking and close them when hit 
-
-// this thing makes the windows pop when doubleclicking and close them when hit x
-// this thing makes the windows pop when doubleclicking and close them when hit x
-// this thing makes the windows pop when doubleclicking and close them when hit x
-// this thing makes the windows pop when doubleclicking and close them when hit x
-
-////BEHIND EING
-//
-//$(function() {
-//  $("#behindeing").hide();
-//
-//$("#about").hover(function() {
-//  $("#behindeing").fadeTo( 300, 1 );
-//    $("#about").animate({color: '#d3d3d3'}, 300);
-//  
-// $("#about").mouseleave(function() {
-//  $("#behindeing").fadeTo( 90, 0 );
-//     $("#about").animate({color: 'white'}, 90);
-//     
-//});          });         }); 
-//
-////BEHIND process
-//
-//$(function() {
-//  $("#behindeing").hide();
-//
-//$(".miniport").hover(function() {
-//  $("#behindeing").fadeTo( 300, 1 );
-//    $(".miniport").animate({color: '#d3d3d3'}, 300);
-//  
-// $(".miniport").mouseleave(function() {
-//  $("#behindeing").fadeTo( 90, 0 );
-//    $(".miniport").animate({color: 'white'}, 90);
-//     
-//});          });         }); 
-//
-////STUFFFFFF CONTACT EING
-//
-//$(function() {
-//  $("#behindeing").hide();
-//
-//$("#contacteing").hover(function() {
-//  $("#behindeing").fadeTo( 300, 1 );
-//    $("#contacteing").animate({color: '#d3d3d3'}, 300);
-//  
-// $("#contacteing").mouseleave(function() {
-//  $("#behindeing").fadeTo( 90, 0 );
-//    $("#contacteing").animate({color: 'black'}, 90);
-//     
-//});          });         }); 
-//
-////STUFFFFFF Eing's RESUME
-//
-//$(function() {
-//  $("#behindeing").hide();
-//
-//$("#eingsresume").hover(function() {
-//  $("#behindeing").fadeTo( 300, 1 );
-//    $("#eingsresume").animate({color: '#d3d3d3'}, 300);
-//  
-// $("#eingsresume").mouseleave(function() {
-//  $("#behindeing").fadeTo( 90, 0 );
-//    $("#eingsresume").animate({color: 'white'}, 90);
-//     
-//});          });         }); 
-//
-////STUFFFFFF EING LIKES TAKING PHOTOS
-//
-//$(function() {
-//  $("#behindeing").hide();
-//
-//$("#einglikestakingphotos").hover(function() {
-//  $("#behindeing").fadeTo( 90, 1 );
-//    $("#einglikestakingphotos").animate({color: '#d3d3d3'}, 90);
-//  
-// $("#einglikestakingphotos").mouseleave(function() {
-//  $("#behindeing").fadeTo( 300, 0 );
-//    $("#einglikestakingphotos").animate({color: 'white'}, 300);
-//     
-//});          });         }); 
-
-
-
-
-
-
-// J K
-// NO .dblclick
-// SINCE NO ONE WILL GET THE DOUBLE CLICKING THING AND THINK MY SITE JUST BROKE
-
 $(document).ready(function () {
   $("#projects-window").hide();
 
-$("#projects").click(function() {
-//    $("#behindeing").fadeTo( 300, 1 );
+$("#works").click(function() {
   $("#projects-window").show();
   
  $("#xprojects").click(function() {
@@ -191,138 +99,23 @@ $(this).parent().hide(".detailed-project-windows");
     
 }); 
 
-// detailed projects windows
+// detailed projects windows down
+// detailed projects windows down
+// detailed projects windows down
+// detailed projects windows down
+
 //GD1-book
 $(document).ready(function(){
-$("#gd1-book").click(function() {
-  $("#gd1-book-detail").show();
+$("#name").click(function() {
+  $("#name-detail").show();
 //    document.body.style.background = "#818181";
   
- $("#xgd1-book").click(function() {
-  $("#gd1-book-detail").hide();
+ $("#xname").click(function() {
+  $("#name-detail").hide();
 //     document.body.style.background = "#c6c6c6";
   
 });          });          });
 
-//TYPE1-22
-$(document).ready(function(){
-$("#type1-44").click(function() {
-  $("#type1-44-detail").show();
-//    document.body.style.background = "#818181";
-  
- $("#xtype1-44").click(function() {
-  $("#type1-44-detail").hide();
-//     document.body.style.background = "#c6c6c6";
-  
-});          });          });
-
-//GD3-BOBA
-$(document).ready(function(){
-$("#gd3-boba").click(function() {
-  $("#gd3-boba-detail").show();
-//    document.body.style.background = "#818181";
-  
- $("#xgd3-boba").click(function() {
-  $("#gd3-boba-detail").hide();
-//     document.body.style.background = "#c6c6c6";
-  
-});          });          });
-
-//filmphoto
-$(document).ready(function(){
-$("#filmphoto").click(function() {
-  $("#filmphoto-detail").show();
-//  document.body.style.background = "#818181";
-    
- $("#xfilmphoto").click(function() {
-  $("#filmphoto-detail").hide();
-// document.body.style.background = "#c6c6c6";
-  
-});          });          });
-
-//l3r
-$(document).ready(function(){
-$("#lr").click(function() {
-  $("#lr-detail").show();
-//  document.body.style.background = "#818181";
-    
- $("#xlr").click(function() {
-  $("#lr-detail").hide();
-// document.body.style.background = "#c6c6c6";
-  
-});          });          });
-
-// milestone
-$(document).ready(function(){
-$("#milestone").click(function() {
-  $("#milestone-detail").show();
-//  document.body.style.background = "#818181";
-    
- $("#xmilestone").click(function() {
-  $("#milestone-detail").hide();
-// document.body.style.background = "#c6c6c6";
-  
-});          });          });
-
-//type2-book
-$(document).ready(function(){
-$("#type2-book").click(function() {
-  $("#type2-book-detail").show();
-  
- $("#xtype2-book").click(function() {
-  $("#type2-book-detail").hide();
-  
-});          });          });
-
-//type1-nov
-$(document).ready(function(){
-$("#type1-nov").click(function() {
-  $("#type1-nov-detail").show();
-  
- $("#xtype1-nov").click(function() {
-  $("#type1-nov-detail").hide();
-  
-});          });          });
-
-//type2-id-trick-vid
-$(document).ready(function(){
-$("#type2-id-trick-vid").click(function() {
-  $("#type2-id-trick-vid-detail").show();
-  
- $("#xtype2-id-trick-vid").click(function() {
-  $("#type2-id-trick-vid-detail").hide();
-  
-});          });          });
-
-//pong_game
-$(document).ready(function(){
-$("#pong_game").click(function() {
-  $("#pong_game-detail").show();
-  
- $("#xpong_game").click(function() {
-  $("#pong_game-detail").hide();
-  
-});          });          });
-
-//s o u n d
-$(document).ready(function(){
-$("#sound").click(function() {
-  $("#sound-detail").show();
-  
- $("#xsound").click(function() {
-  $("#sound-detail").hide();
-  
-});          });          });
-
-// k e y n o t e
-$(document).ready(function(){
-$("#keynote").click(function() {
-  $("#keynote-detail").show();
-  
- $("#xkeynote").click(function() {
-  $("#keynote-detail").hide();
-  
-});          });          });
 
 
 
@@ -347,37 +140,6 @@ start: function(event, ui) { $(this).css("z-index", a++); }
 });
 
  });
-
-
-
-/////// G R E Y S C A L E  H O V E R /////////
-
-$(function() {
-  $('#projects').hover(function() {
-    $('#pj-icon').css('filter', 'none');
-  }, 
-  function() {
-    $('#pj-icon').css('filter', 'grayscale(100)');
-  });
-
-  //-----
-
-  $('#resume').hover(function() {
-    $('#r-icon').css('filter', 'none');
-  }, 
-  function() {
-    $('#r-icon').css('filter', 'grayscale(100)');
-  });
-
-  //-----
-
-  $('#contact').hover(function() {
-    $('#c-icon').css('filter', 'none');
-  }, 
-  function() {
-    $('#c-icon').css('filter', 'grayscale(100)');
-  });
-});
 
  
 ///////////////////
@@ -411,13 +173,17 @@ function hideVideo(e) {
 
 $( function() {
 
-   $( ".movethis,#about-window,#leave-stay-window,#eingsresume_lol" ).draggable({
+   $( ".movethis,#about-window,#leave-stay-window,#einglogo,#about,#contacteing,#works, #statement" ).draggable({
          
 });  
 
-    $("#eingandnav").draggable({
-     handle: "#eeiinngg"
-});  });
+//    $("#eingandnav").draggable({
+//     handle: "#einglogo"
+//}); 
+
+});
+
+
 
 	
 
