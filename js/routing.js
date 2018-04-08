@@ -31,7 +31,7 @@
   // intercept internal links
   var handleNavigation = function (e) {
     e.preventDefault();
-    alert("click handled");
+    // alert("click handled");
 
     var href = this.href;
     history.pushState({}, undefined, href);
@@ -45,10 +45,24 @@
   // respond to current route and route changes
   var handleRouteChange = function () {
     var currentRoute = location.pathname;
+    $("[id^='window-']").hide();
     switch (currentRoute) {
-      case "/works":
-        alert("switching to works!");
+      case "/work":
+        $("#window-work").show();
         break;
+      case "/contact":
+        $("#window-contact").show();
+        break;
+      case "/about":
+        $("window-about").show();
+        break;
+      case "/":
+        break;
+      default:
+        history.replaceState({}, undefined, "/");
+        break;
+
+
     }
   };
 
