@@ -30,13 +30,15 @@
 (function (history, window) {
   // intercept internal links
   var handleNavigation = function (e) {
+    e.preventDefault();
+    alert("click handled");
+
     var href = this.href;
     history.pushState({}, undefined, href);
     handleRouteChange();
-    e.preventDefault();
   };
   $(document).ready(function () {
-    $("a[href^=/]").click(handleNavigation);
+    $("a[href^=/]").bind(handleNavigation);
   });
 
 
