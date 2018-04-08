@@ -10,18 +10,51 @@
 // the correct url will be waiting in the browser's history for
 // the single page app to route accordingly.
 (function (l) {
-    if (l.search) {
-        var q = {};
-        l.search.slice(1).split('&').forEach(function (v) {
-            var a = v.split('=');
-            q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
-        });
-        if (q.p !== undefined) {
-            window.history.replaceState(null, null,
-                l.pathname.slice(0, -1) + (q.p || '') +
-                (q.q ? ('?' + q.q) : '') +
-                l.hash
-            );
-        }
+  if (l.search) {
+    var q = {};
+    l.search.slice(1).split('&').forEach(function (v) {
+      var a = v.split('=');
+      q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
+    });
+    if (q.p !== undefined) {
+      window.history.replaceState(null, null,
+        l.pathname.slice(0, -1) + (q.p || '') +
+        (q.q ? ('?' + q.q) : '') +
+        l.hash
+      );
     }
-}(window.location))
+  }
+}(window.location));
+
+
+(function (history, window) {
+  // intercept internal links
+  var handleNavigation = function (e) {
+    var href = this.href;
+    history.pushState({}, undefined, href);
+    handleRouteChange();
+    e.preventDefault();
+  };
+  $(document).ready(function () {
+    $("a[href^=/]").click(handleNavigation);
+  });
+
+
+  // respond to current route and route changes
+  var handleRouteChange = function () {
+    var currentRoute = location.pathname;
+    switch (currentRoute) {
+      case "/works":
+        alert("switching to works!");
+        break;
+    }
+  };
+
+  window.onpopstate = function (event) {
+    handleRouteChange();
+  }
+
+  // handle the current route now
+  handleRouteChange();
+
+})(window.history, window);

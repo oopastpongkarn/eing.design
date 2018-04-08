@@ -1,39 +1,39 @@
-$(document).ready(function () {
-  $("#projects-window").hide();
+// $(document).ready(function () {
+//   $("#projects-window").hide();
 
-$("#works").click(function() {
-  $("#projects-window").show();
+// $("#works").click(function() {
+//   $("#projects-window").show();
   
- $("#xprojects").click(function() {
-  $("#projects-window").hide();
+//  $("#xprojects").click(function() {
+//   $("#projects-window").hide();
   
-});          });          });
+// });          });          });
 
-// _________________________
+// // _________________________
 
-$(document).ready(function(){
-  $("#eingsresume_lol").hide();
+// $(document).ready(function(){
+//   $("#eingsresume_lol").hide();
 
-$("#resume,#r_in_about").click(function() {
-  $("#eingsresume_lol").show();
+// $("#resume,#r_in_about").click(function() {
+//   $("#eingsresume_lol").show();
   
- $("#xresume").click(function() {
-  $("#eingsresume_lol").hide();
+//  $("#xresume").click(function() {
+//   $("#eingsresume_lol").hide();
   
-});          });          });
+// });          });          });
 
-// _________________________
+// // _________________________
 
-$(document).ready(function(){
-  $("#about-window").hide();
+// $(document).ready(function(){
+//   $("#about-window").hide();
 
-$("#about").click(function() {
-  $("#about-window").show();
+// $("#about").click(function() {
+//   $("#about-window").show();
   
- $("#xabout").click(function() {
-  $("#about-window").hide();
+//  $("#xabout").click(function() {
+//   $("#about-window").hide();
   
-});          });          });
+// });          });          });
 
 
  //--------S T I C K Y -------///
