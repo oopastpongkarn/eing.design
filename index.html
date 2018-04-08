@@ -1,9 +1,9 @@
-  <!DOCTYPE html>
-  <html>
+<!DOCTYPE html>
+<html>
 
-  <head>
-  
-       <!-- 
+<head>
+
+  <!-- 
   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
   ░░░░░░░░████░░████░░░████░░░░░░░
   ░░░░░░░░████░░████░░░░░░░░░░░░░░
@@ -15,8 +15,8 @@
   ░░░░░░░░████░░████░░░████░░░░░░░
   ░░░░░░░░████░░████░░░████░░░░░░░
   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
-  
-<!--
+
+  <!--
 <script LANGUAGE="JavaScript">
 <!-- Begin
 var scrl = " :) eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiinnnnnnnnnnnnnnnnnnnnnggggggggggggggggggggggggg";
@@ -28,92 +28,92 @@ function scrlsts() {
 
 </script>
 -->
-      
-      
-    
-      
-      
-<!--title in bar of the browser-->
-      <script language=javascript>
+
+
+
+
+
+  <!--title in bar of the browser-->
+  <script language=javascript>
     var title = new MovingTitle(" e e e e e e e i i i i i i i n n n n n n n g g g g g g g ", 110, 18);
-title.init();
+    title.init();
     function MovingTitle(writeText, interval, visibleLetters) {
-    var _instance = {};
+      var _instance = {};
 
-    var _currId = 0;
-    var _numberOfLetters = writeText.length;
+      var _currId = 0;
+      var _numberOfLetters = writeText.length;
 
-    function updateTitle() {
+      function updateTitle() {
         _currId += 1;
-        if(_currId > _numberOfLetters - 1) {
-            _currId = 0; 
+        if (_currId > _numberOfLetters - 1) {
+          _currId = 0;
         }
 
         var startId = _currId;
         var endId = startId + visibleLetters;
         var finalText;
-        if(endId < _numberOfLetters - 1) {
-            finalText = writeText.substring(startId, endId);
+        if (endId < _numberOfLetters - 1) {
+          finalText = writeText.substring(startId, endId);
         } else {
-            var cappedEndId = _numberOfLetters;
-            endId = endId - cappedEndId;
+          var cappedEndId = _numberOfLetters;
+          endId = endId - cappedEndId;
 
-            finalText = writeText.substring(startId, cappedEndId) +     writeText.substring(0, endId);
+          finalText = writeText.substring(startId, cappedEndId) + writeText.substring(0, endId);
         }
 
-        document.title = finalText; 
-    }
+        document.title = finalText;
+      }
 
-    _instance.init = function() {
+      _instance.init = function () {
         setInterval(updateTitle, interval);
-    };
+      };
 
-    return _instance;
-}
-</script>
-
-
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="icon" href="img/favicon.png">
-    <link rel="stylesheet" href="css/index.css">
-      <link rel="stylesheet" href="css/media.css">
-	  
-	  <link rel="stylesheet" type="text/css" href="css/typeface/typeface.css">
-    
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    <script src="js/jquery-2.2.3.min.js"></script>
-          <script src="js/index.js"></script>
-    <script src="https://use.typekit.net/uqz1tyv.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-      
-            
-
-<!--description+name in search engine-->
-      <meta name="title" content="eing.design">
-      <meta name="author" content="Eing Onusa Opastpongkarn">
-      <meta name="description" content="eing's graphic design portfolio">
-<!--description+name-->
-      <meta property="og:title" content="eing.design">
-      <meta property="og:description" content="eing's graphic design portfolio">
-      
-<!--G O O G L E  S T U F F-->
-      <meta name="google" content="nositelinkssearchbox" />
-      <meta name="google" content="notranslate" />
-	 
+      return _instance;
+    }
+  </script>
 
 
-  </head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.png">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/media.css">
 
-  <body onLoad="scrlsts()">
-    
-      
-        <div id="top-border" class="them-borders"></div>
-        <div id="left-border" class="them-borders"></div>
-        <div id="bottom-border" class="them-borders"></div>
-        <div id="right-border" class="them-borders"></div>
+  <link rel="stylesheet" type="text/css" href="css/typeface/typeface.css">
 
-   <!-- 
+  <script>try { Typekit.load({ async: true }); } catch (e) { }</script>
+  <script src="js/jquery-2.2.3.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="https://use.typekit.net/uqz1tyv.js"></script>
+  <script>try { Typekit.load({ async: true }); } catch (e) { }</script>
+
+  <script src="routing.js"></script>
+
+  <!--description+name in search engine-->
+  <meta name="title" content="eing.design">
+  <meta name="author" content="Eing Onusa Opastpongkarn">
+  <meta name="description" content="eing's graphic design portfolio">
+  <!--description+name-->
+  <meta property="og:title" content="eing.design">
+  <meta property="og:description" content="eing's graphic design portfolio">
+
+  <!--G O O G L E  S T U F F-->
+  <meta name="google" content="nositelinkssearchbox" />
+  <meta name="google" content="notranslate" />
+
+
+
+</head>
+
+<body onLoad="scrlsts()">
+
+
+  <div id="top-border" class="them-borders"></div>
+  <div id="left-border" class="them-borders"></div>
+  <div id="bottom-border" class="them-borders"></div>
+  <div id="right-border" class="them-borders"></div>
+
+  <!-- 
    ▒▒▒▒▒▒▒▒▒▒▒▒ borders
    ▒▒▒▒▓▒▒▓▒▒▒▒
    ▒▒▒▒▓▒▒▓▒▒▒▒ 
@@ -121,137 +121,151 @@ title.init();
    ▒▓▒▒▒▒▒▒▒▒▓▒
    ▒▒▓▓▓▓▓▓▓▓▒▒ windows
    ▒▒▒▒▒▒▒▒▒▒▒▒ -->
-      
-           
-          <div class="movethis" id="bg1" ></div>
-          <div class="movethis" id="bg2" ></div>
-          <div class="movethis" id="bg3" ></div>
-          <div class="movethis" id="bg4" ></div>
-            
-      <span class="movethis" id="colophon"> This website is hard-coded/heart-coded by Eing using <a href="http://brackets.io/"> Brackets</a> and is hosted through <a href="http://github.com/">Github.</a> All texts are typeset in Roboto-mono. </span>
-      
-          <div class="movethis" id="bg5" ></div>
-      
-<!--
+
+
+  <div class="movethis" id="bg1"></div>
+  <div class="movethis" id="bg2"></div>
+  <div class="movethis" id="bg3"></div>
+  <div class="movethis" id="bg4"></div>
+
+  <span class="movethis" id="colophon"> This website is hard-coded/heart-coded by Eing using
+    <a href="http://brackets.io/"> Brackets</a> and is hosted through
+    <a href="http://github.com/">Github.</a> All texts are typeset in Roboto-mono. </span>
+
+  <div class="movethis" id="bg5"></div>
+
+  <!--
           
           <div class="movethis" id="pink" ></div>
           <div class="movethis" id="orange" ></div>
 -->
-	  
-        <div id="einglogo"> 
-			<img src="img/einglogo.png"> </div>
-	  
-	  <div id="statement"> 
-			<img src="img/statement.svg"> </div>
-	  
-	  	<div id="works" class="theicons"> 
-			<img src="img/workicon.svg"></div>
-	  
-        <div id="about" class="theicons"> 
-			<img src="img/abouticon.svg"></div>
-	  
-        <div id="contacteing" class="theicons"> 
-			<img src="img/contacticon.svg"></div>
-		  
-          
-          <!-- <div id="resume"></div> 
+
+  <div id="einglogo">
+    <img src="img/einglogo.png"> </div>
+
+  <div id="statement">
+    <img src="img/statement.svg"> </div>
+
+  <div id="works" class="theicons">
+    <img src="img/workicon.svg">
+  </div>
+
+  <div id="about" class="theicons">
+    <img src="img/abouticon.svg">
+  </div>
+
+  <div id="contacteing" class="theicons">
+    <img src="img/contacticon.svg">
+  </div>
+
+
+  <!-- <div id="resume"></div> 
         <div id="r-icon"> <img src="img/res.png" width="110"></div>
     </div> -->
-      
-      
-              <div id="stickyandx">
-                <span class="xstickyeing"> x </span>
-                  
-                   <div id="emaileing"> 
-                       <span id="eingonusa">  
-                         Eing Opastpongkarn </span>
-                       <span id="gd">  
-                         graphic designer / San Francisco </span>
-                       
-                  <a href="mailto:hi@eing.design?subject=Hi there"> hi@eing.design</a></div>
-                  
-                  
-                <img class="stickyeing" src="img/contacteing.png" width="100"> 
-                  
-              </div>             
-            
-
-          <div id="projects-window" class="click-to-front"> 
-            <div class="bar">
-              <div class="title-window">School Projects</div>
-            </div>
-          <div class="xclosemex" id="xprojects">x</div>
-          <div id="projects-content">
-
-<!--            <p id="filter">  </p>-->
-			  
-     <!-- down thumbs -->
-     <!-- down thumbs -->
-     <!-- down thumbs -->
-         
-<!-- name thumbnail  -->
-                <div id="name" class="boxes-for-projects">
-                  <img src="img/name.jpg" style="width:161%;margin-left:-30%"> </div>
 
 
-           </div> <!-- project content -->
-          </div> <!-- project window -->
-	  
-	  
+  <div id="stickyandx">
+    <span class="xstickyeing"> x </span>
 
-     <!-- down DETAILED PROJECT WINDOWS -->
-     <!-- down DETAILED PROJECT WINDOWS -->
-     <!-- down DETAILED PROJECT WINDOWS -->
-              
-<!-- name -->
+    <div id="emaileing">
+      <span id="eingonusa">
+        Eing Opastpongkarn </span>
+      <span id="gd">
+        graphic designer / San Francisco </span>
 
-          <div id="name-detail" class="detailed-project-windows" class="click-to-front"> 
-            <div class="bar">
-              <div class="title-window">Title here</div>
-            </div>
-          <div class="xclosemex" id="xname">x</div>
-          <div class="detailed-project-content">
+      <a href="mailto:hi@eing.design?subject=Hi there"> hi@eing.design</a>
+    </div>
 
-             <!--contents here-->
 
-           </div> <!-- detailed project content -->
-          </div> <!-- detailed project window -->
+    <img class="stickyeing" src="img/contacteing.png" width="100">
+
+  </div>
+
+
+  <div id="projects-window" class="click-to-front">
+    <div class="bar">
+      <div class="title-window">School Projects</div>
+    </div>
+    <div class="xclosemex" id="xprojects">x</div>
+    <div id="projects-content">
+
+      <!--            <p id="filter">  </p>-->
+
+      <!-- down thumbs -->
+      <!-- down thumbs -->
+      <!-- down thumbs -->
+
+      <!-- name thumbnail  -->
+      <div id="name" class="boxes-for-projects">
+        <img src="img/name.jpg" style="width:161%;margin-left:-30%"> </div>
+
+
+    </div>
+    <!-- project content -->
+  </div>
+  <!-- project window -->
 
 
 
-          <!-- UP DETAILED PROJECT WINDOWS -->
-          <!-- UP DETAILED PROJECT WINDOWS -->
-          <!-- UP DETAILED PROJECT WINDOWS -->
+  <!-- down DETAILED PROJECT WINDOWS -->
+  <!-- down DETAILED PROJECT WINDOWS -->
+  <!-- down DETAILED PROJECT WINDOWS -->
+
+  <!-- name -->
+
+  <div id="name-detail" class="detailed-project-windows" class="click-to-front">
+    <div class="bar">
+      <div class="title-window">Title here</div>
+    </div>
+    <div class="xclosemex" id="xname">x</div>
+    <div class="detailed-project-content">
+
+      <!--contents here-->
+
+    </div>
+    <!-- detailed project content -->
+  </div>
+  <!-- detailed project window -->
 
 
-          <!-- /////hey :)//// -->
-        
-          <div id="about-window">   
-              
-          <div class="xclosemex" id="xabout">x</div>
-          <div id="about-content">
 
-              
-              Eing is a xxxxxxx  <span class="links_in_about"><a href="http://www.cca.edu"> xx xx</a></span> xxxxxx. 
-              
-              xxxxxx
-              
-              ++++++++++ <span class="links_in_about"><a href="https://www.google.com/search?q=bangkok+thailand&oq=bangkok+thailand&aqs=chrome.0.0l6.3562j0j4&sourceid=chrome&ie=UTF-8#q=+bangkok%2C+thailand&*"> xxxx</a></span>. 
-             ++++++
-              <span class="links_in_about">
-                  <a href="https://www.linkedin.com/in/eing-o" id="linkedin"> Linkedin</a></span>
+  <!-- UP DETAILED PROJECT WINDOWS -->
+  <!-- UP DETAILED PROJECT WINDOWS -->
+  <!-- UP DETAILED PROJECT WINDOWS -->
 
-             <!--      
+
+  <!-- /////hey :)//// -->
+
+  <div id="about-window">
+
+    <div class="xclosemex" id="xabout">x</div>
+    <div id="about-content">
+
+
+      Eing is a xxxxxxx
+      <span class="links_in_about">
+        <a href="http://www.cca.edu"> xx xx</a>
+      </span> xxxxxx. xxxxxx ++++++++++
+      <span class="links_in_about">
+        <a href="https://www.google.com/search?q=bangkok+thailand&oq=bangkok+thailand&aqs=chrome.0.0l6.3562j0j4&sourceid=chrome&ie=UTF-8#q=+bangkok%2C+thailand&*">
+        xxxx</a>
+      </span>. ++++++
+      <span class="links_in_about">
+        <a href="https://www.linkedin.com/in/eing-o" id="linkedin"> Linkedin</a>
+      </span>
+
+      <!--      
               or her <span class="links_in_about" id="r_in_about">
                  resume</span>   -->here.
-            
-          </div> </div> 
+
+    </div>
+  </div>
 
 
 
 
-<!--        </div> //imaginary-->
-        
+  <!--        </div> //imaginary-->
+
   <!--   
   ──────▄▀▄─────▄▀▄   windows
   ─────▄█░░▀▀▀▀▀░░█▄
@@ -259,38 +273,33 @@ title.init();
   █▄▄█─█░░▀░░┬░░▀░░█─█▄▄█ -->
 
 
-<!--
+  <!--
          <div id="contact"></div> 
         <div id="c-icon"> <img src="img/ct.png" width="110"></div>
 -->
 
-      <!--   +++++++++++++ -->
+  <!--   +++++++++++++ -->
 
-      <div id="leave-stay-window" class="click-to-front">
-        <div id="leave-stay-content">
-          <p> But it's on Instagram though...</p>
+  <div id="leave-stay-window" class="click-to-front">
+    <div id="leave-stay-content">
+      <p> But it's on Instagram though...</p>
 
-          <div id="dont-go"> 
-              <div id="bye"> 
-                <a href="http://instagram.com/eing.design" id="go"> GO </a>
-              </div>
-          </div>
-
-          <div id="stay"> 
-              <div id="iwantyoutostay"> STAY </div> 
-          </div>
+      <div id="dont-go">
+        <div id="bye">
+          <a href="http://instagram.com/eing.design" id="go"> GO </a>
         </div>
-          
       </div>
 
-      <!-- +++++++++++++++ -->
-      
+      <div id="stay">
+        <div id="iwantyoutostay"> STAY </div>
+      </div>
+    </div>
 
-  </body>
-              
+  </div>
+
+  <!-- +++++++++++++++ -->
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-
-  </html> 
+</body>
+</html>
