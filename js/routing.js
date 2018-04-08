@@ -38,7 +38,7 @@
     handleRouteChange();
   };
   $(document).ready(function () {
-    $("a[href^='/']").bind(handleNavigation);
+    $("a[href^='/']").bind('click', handleNavigation);
   });
 
 
