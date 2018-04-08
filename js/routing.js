@@ -45,7 +45,9 @@
   // respond to current route and route changes
   var handleRouteChange = function () {
     var currentRoute = location.pathname;
+    // hide all windows
     $("[id^='window-']").hide();
+    // then, show only the correct one
     switch (currentRoute) {
       case "/work":
         $("#window-work").show();
@@ -56,16 +58,10 @@
       case "/about":
         $("window-about").show();
         break;
-      case "/":
-        break;
-      default:
-        history.replaceState({}, undefined, "/");
-        break;
-
-
     }
   };
 
+  // handle back button
   window.onpopstate = function (event) {
     handleRouteChange();
   }
