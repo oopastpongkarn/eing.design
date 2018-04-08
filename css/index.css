@@ -214,7 +214,7 @@ body { background-color: #000000;
 
 /* P R O J E C T S */
 
- #projects-window {
+ #window-work {
   width: 85%; 
   height: 685px;
   background-color: white;
@@ -402,7 +402,7 @@ body { background-color: #000000;
     opacity: 0.5;
 }
 
- #about-window {
+ #window-about {
   width: 400px; 
   height: 315px;
   background-color: white;
@@ -1078,7 +1078,7 @@ body { background-color: #000000;
 */
 }
 
-#contacteing{
+#window-contact{
 	width: 102px;
 /*
 	top: 60.2vh;
@@ -1088,7 +1088,7 @@ body { background-color: #000000;
 
 
 /*
-#about:hover, #contacteing:hover, #works:hover {
+#about:hover, #window-contact:hover, #works:hover {
     border-bottom: solid black 3.5px;
     background-color: #848484;
 
@@ -1109,7 +1109,7 @@ body { background-color: #000000;
 }
 
 
-#about:active, .miniport:active, #statement:visited:active, #contacteing:active {
+#about:active, .miniport:active, #statement:visited:active, #window-contact:active {
   color: #ffc42c;
 }
 
