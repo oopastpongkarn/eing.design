@@ -27,46 +27,48 @@
 }(window.location));
 
 
-(function (history, window) {
-  // intercept internal links
-  var handleNavigation = function (e) {
-    e.preventDefault();
-    // alert("click handled");
-
-    var href = this.href;
-    history.pushState({}, undefined, href);
-    handleRouteChange();
-  };
+(function (history, window, $) {
   $(document).ready(function () {
-    $("a[href^='/']").bind('click', handleNavigation);
-  });
+    // intercept internal links
+    var handleNavigation = function (e) {
+      e.preventDefault();
+      // alert("click handled");
+
+      var href = this.href;
+      history.pushState({}, undefined, href);
+      handleRouteChange();
+    };
+    $(document).ready(function () {
+      $("a[href^='/']").bind('click', handleNavigation);
+    });
 
 
-  // respond to current route and route changes
-  var handleRouteChange = function () {
-    var currentRoute = location.pathname;
-    // hide all windows
-    $("[id^='window-']").hide();
-    // then, show only the correct one
-    switch (currentRoute) {
-      case "/work":
-        $("#window-work").show();
-        break;
-      case "/contact":
-        $("#window-contact").show();
-        break;
-      case "/about":
-        $("window-about").show();
-        break;
+    // respond to current route and route changes
+    var handleRouteChange = function () {
+      var currentRoute = location.pathname;
+      // hide all windows
+      $("[id^='window-']").hide();
+      // then, show only the correct one
+      switch (currentRoute) {
+        case "/work":
+          $("#window-work").show();
+          break;
+        case "/contact":
+          $("#window-contact").show();
+          break;
+        case "/about":
+          $("window-about").show();
+          break;
+      }
+    };
+
+    // handle back button
+    window.onpopstate = function (event) {
+      handleRouteChange();
     }
-  };
 
-  // handle back button
-  window.onpopstate = function (event) {
+    // handle the current route now
     handleRouteChange();
-  }
 
-  // handle the current route now
-  handleRouteChange();
-
-})(window.history, window);
+  });
+})(window.history, window, jQuery);
