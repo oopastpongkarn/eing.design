@@ -101,7 +101,7 @@ body { background-color: #000000;
 
 #colophon { 
     color: black;
-   font-family: 'faroWeb', Sans-Serif;
+   font-family: 'faro', Sans-Serif;
     font-size: 18px;
     line-height: 30px;
    font-weight: 500;
@@ -200,7 +200,7 @@ body { background-color: #000000;
 #xresume {
   margin-top: 20px;
   position: relative;
-  font-family: 'faroWeb', Sans-Serif;
+  font-family: 'faro', Sans-Serif;
   font-weight: 500;
   color: black;
   font-size: 45px;
@@ -240,7 +240,7 @@ body { background-color: #000000;
  }
 
  .xclosemex {
-  font-family: 'faroWeb', Sans-Serif;
+  font-family: 'faro', Sans-Serif;
   font-weight: 900;
   color: black;
   float: right;
@@ -251,13 +251,14 @@ body { background-color: #000000;
  }
 
  .title-window {
-  font-size: 16px;
-  font-family: 'faroWeb', Sans-Serif;
-  font-weight: 800;
-  margin-top: -2px;
+  font-size: 19px;
+  font-family: 'faroSad', Sans-Serif;
+  font-weight: 700;
+  margin-top: -1px;
   color: black;
   text-align: center;
   cursor: move;
+/*	 text-transform: uppercase;*/
 
  }
 
@@ -289,7 +290,7 @@ body { background-color: #000000;
     padding: 6% 1% 3% 5%;
     width: 80%;
     color: black;
-    font-family: 'faroWeb', Sans-Serif;
+    font-family: 'faro', Sans-Serif;
    font-weight: 500;
 }
 
@@ -298,7 +299,7 @@ body { background-color: #000000;
     padding: 6% 1% 3% 5%;
     width: 80%;
     color: black;
-    font-family: 'faroWeb', Sans-Serif;
+    font-family: 'faro', Sans-Serif;
    font-weight: 500;
 }
 */
@@ -370,7 +371,7 @@ body { background-color: #000000;
     padding: 4% 1% 1% 5%;
     width: 80%;
     color: black;
-    font-family: 'faroWeb', Sans-Serif;
+    font-family: 'faro', Sans-Serif;
     font-weight: 500;
     line-height: 1.5em;
     min-width: 230px;
@@ -390,7 +391,7 @@ body { background-color: #000000;
   bottom: 0px; 
   left: 55px;
     position: relative;
-  font-family: 'faroWeb', Sans-Serif;
+  font-family: 'faro', Sans-Serif;
   font-weight: 500;
   color: black;
   font-size: 45px;
@@ -423,7 +424,7 @@ body { background-color: #000000;
   background-color: transparent;
   word-wrap: break-word;
   position: fixed;
-  font-family: 'faroWeb', Sans-Serif;
+  font-family: 'faro', Sans-Serif;
   font-weight: 500;
   color: black;
   font-size: 16px;
@@ -453,7 +454,7 @@ body { background-color: #000000;
 /*
 #about-content a, a:visited {
    color: black;
-   font-family: 'faroWeb', Sans-Serif;
+   font-family: 'faro', Sans-Serif;
    font-weight: 500;
    font-size: 1.4em;
    opacity: 1;
@@ -463,7 +464,7 @@ body { background-color: #000000;
 
 #about-content a:hover, a:hover:visited {
    color: #ffc42c;
-   font-family: 'faroWeb', Sans-Serif;
+   font-family: 'faro', Sans-Serif;
    font-weight: 500;
    font-size: 1.4em;
    text-decoration: none;
@@ -944,9 +945,8 @@ body { background-color: #000000;
   bottom: 586px; 
   right: 160px;
   position: fixed;
-  font-family: 'faroWeb', Sans-Serif;
+  font-family: 'faro', Sans-Serif;
   font-weight: 500;
-  letter-spacing: -2px;
   color: black;
   font-size: 45px;
   cursor: pointer;
@@ -969,60 +969,42 @@ body { background-color: #000000;
     bottom: 480px;
     right: 325px;
     position: fixed;
-  font-family: 'faroWeb', Sans-Serif;
-  font-weight: 500;
+  font-family: 'faro', Sans-Serif;
+  font-weight: 700;
   color: black;
-  font-size: 85px;
+  font-size: 30px;
   cursor: pointer;
   z-index: 12;
-  letter-spacing: -5px;
 }
 
 #gd {
     bottom: 430px;
     right: 307px;
     position: fixed;
-  font-family: 'faroWeb', Sans-Serif;
+  font-family: 'faro', Sans-Serif;
   font-weight: 500;
   color: black;
-  font-size: 10.3px;
+  font-size: 30px;
   cursor: pointer;
   z-index: 12;
 }
-
-/*
-#emaileing p{
-  bottom: 563px; 
-  left: 1120px;
-  position: fixed;
-  font-family: 'faroWeb', Sans-Serif;
-  font-weight: 800;
-  color: black;
-  font-size: 10px;
-  cursor: pointer;
-    line-height: 15px;
-  z-index: 12;
-}
-*/
 
 #emaileing a{
-    background-color: #ffc42c;
+    background-color: #dedede;
   bottom: 445px; 
   right: 397px;
   position: fixed;
-  font-family: 'faroWeb', Sans-Serif;
+  font-family: 'faro', Sans-Serif;
   font-weight: 500;
   color: black;
-  font-size: 15px;
+  font-size: 30px;
   cursor: pointer;
   z-index: 12;
-    text-decoration: none;
-     border-bottom: solid black 2px;
+  text-decoration: none;
 }
 
 #emaileing a:hover {
-/*     border: none;*/
-    color: white;
+	font-family: 'faroSad', Sans-Serif;
 }
 
 #einglogo img{
@@ -1096,7 +1078,7 @@ body { background-color: #000000;
 */
 
 .miniport, .miniport:visited {
-  font-family: 'faroWeb', Sans-Serif;
+  font-family: 'faro', Sans-Serif;
   font-weight: 500;
   color: black;
   font-size: 15px;
@@ -1116,7 +1098,7 @@ body { background-color: #000000;
 
 h1 {  /*width: 270px;*/
       width: 40%;
-      font-family: 'faroWeb', Sans-Serif;
+      font-family: 'faro', Sans-Serif;
       font-weight: 500;
       color: black;
       font-size: 25px;
@@ -1166,7 +1148,7 @@ h1 {  /*width: 270px;*/
 }
 
 #leave-stay-content p {
-  font-family: 'faroWeb', Sans-Serif;
+  font-family: 'faro', Sans-Serif;
   font-weight: 500;
   color: black;
   font-size: 25px;
@@ -1191,7 +1173,7 @@ h1 {  /*width: 270px;*/
   width: 100%;
   height: auto;
   color: black;
-  font-family: 'faroWeb', Sans-Serif;
+  font-family: 'faro', Sans-Serif;
   font-weight: 800;
   font-size: 55px;
   position: absolute;
@@ -1214,7 +1196,7 @@ h1 {  /*width: 270px;*/
 #bye a{
   width: 100%;
   height: auto;
-  font-family: 'faroWeb', Sans-Serif;
+  font-family: 'faro', Sans-Serif;
   font-weight: 800;
   font-size: 60px;
   position: absolute;

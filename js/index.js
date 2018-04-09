@@ -68,11 +68,19 @@ $(document).ready(function () {
 
   $(".miniport").click(function () {
     $("#leave-stay-window").show();
+<<<<<<< Updated upstream
 
   });
 });
 
 
+=======
+
+  });
+});
+
+
+>>>>>>> Stashed changes
 $(function () {
 
   $("#stay").click(function () {
@@ -112,6 +120,19 @@ $('.xclosemex').click(function () {
 // detailed projects windows down
 // detailed projects windows down
 
+<<<<<<< HEAD
+//abookaboutablock
+$(document).ready(function(){
+$("#abookaboutablock").click(function() {
+  $("#abookaboutablock-detail").show();
+//    document.body.style.background = "#818181";
+  
+ $("#xabookaboutablock").click(function() {
+  $("#abookaboutablock-detail").hide();
+//     document.body.style.background = "#c6c6c6";
+  
+});          });          });
+=======
 //GD1-book
 $(document).ready(function () {
   $("#name").click(function () {
@@ -125,7 +146,158 @@ $(document).ready(function () {
     });
   });
 });
+<<<<<<< Updated upstream
+=======
+>>>>>>> origin/master
 
+
+//bobaboba
+$(document).ready(function(){
+$("#bobaboba").click(function() {
+  $("#bobaboba-detail").show();
+//    document.body.style.background = "#818181";
+  
+ $("#xbobaboba").click(function() {
+  $("#bobaboba-detail").hide();
+//     document.body.style.background = "#c6c6c6";
+  
+});          });          });
+
+//chrysp
+$(document).ready(function(){
+$("#chrysp").click(function() {
+  $("#chrysp-detail").show();
+//    document.body.style.background = "#818181";
+  
+ $("#xchrysp").click(function() {
+  $("#chrysp-detail").hide();
+//     document.body.style.background = "#c6c6c6";
+  
+});          });          });
+
+//filled
+$(document).ready(function(){
+$("#filled").click(function() {
+  $("#filled-detail").show();
+//    document.body.style.background = "#818181";
+  
+ $("#xfilled").click(function() {
+  $("#filled-detail").hide();
+//     document.body.style.background = "#c6c6c6";
+  
+});          });          });
+
+
+//appstore
+$(document).ready(function(){
+$("#appstore").click(function() {
+  $("#appstore-detail").show();
+//    document.body.style.background = "#818181";
+  
+ $("#xappstore").click(function() {
+  $("#appstore-detail").hide();
+//     document.body.style.background = "#c6c6c6";
+  
+});          });          });
+
+
+//pong
+$(document).ready(function(){
+$("#pong").click(function() {
+  $("#pong-detail").show();
+//    document.body.style.background = "#818181";
+  
+ $("#xpong").click(function() {
+  $("#pong-detail").hide();
+//     document.body.style.background = "#c6c6c6";
+  
+});          });          });
+
+
+//l3r
+$(document).ready(function(){
+$("#l3r").click(function() {
+  $("#l3r-detail").show();
+//    document.body.style.background = "#818181";
+  
+ $("#xl3r").click(function() {
+  $("#l3r-detail").hide();
+//     document.body.style.background = "#c6c6c6";
+  
+});          });          });
+
+//bart
+$(document).ready(function(){
+$("#bart").click(function() {
+  $("#bart-detail").show();
+//    document.body.style.background = "#818181";
+  
+ $("#xbart").click(function() {
+  $("#bart-detail").hide();
+//     document.body.style.background = "#c6c6c6";
+  
+});          });          });
+
+//soundjourney
+$(document).ready(function(){
+$("#soundjourney").click(function() {
+  $("#soundjourney-detail").show();
+//    document.body.style.background = "#818181";
+  
+ $("#xsoundjourney").click(function() {
+  $("#soundjourney-detail").hide();
+//     document.body.style.background = "#c6c6c6";
+  
+});          });          });
+
+//sula
+$(document).ready(function(){
+$("#sula").click(function() {
+  $("#sula-detail").show();
+//    document.body.style.background = "#818181";
+  
+ $("#xsula").click(function() {
+  $("#sula-detail").hide();
+//     document.body.style.background = "#c6c6c6";
+  
+});          });          });
+
+//cheese
+$(document).ready(function(){
+$("#cheese").click(function() {
+  $("#cheese-detail").show();
+//    document.body.style.background = "#818181";
+  
+ $("#xcheese").click(function() {
+  $("#cheese-detail").hide();
+//     document.body.style.background = "#c6c6c6";
+  
+});          });          });
+>>>>>>> Stashed changes
+
+//storycenter
+$(document).ready(function(){
+$("#storycenter").click(function() {
+  $("#storycenter-detail").show();
+//    document.body.style.background = "#818181";
+  
+ $("#xstorycenter").click(function() {
+  $("#storycenter-detail").hide();
+//     document.body.style.background = "#c6c6c6";
+  
+});          });          });
+
+//eee
+$(document).ready(function(){
+$("#eee").click(function() {
+  $("#eee-detail").show();
+//    document.body.style.background = "#818181";
+  
+ $("#xeee").click(function() {
+  $("#eee-detail").hide();
+//     document.body.style.background = "#c6c6c6";
+  
+});          });          });
 
 
 
