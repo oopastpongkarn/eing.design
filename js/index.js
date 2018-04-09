@@ -1,47 +1,4 @@
-// $(document).ready(function () {
-  // $("#projects-window").hide();
-
-  // $("#works").click(function() {
-  //   $("#projects-window").show();
-  // });  
-
-  //  $("#xprojects").click(function() {
-  //   $("#projects-window").hide();
-
-  //  });          
-// });
-
-// // _________________________
-
-// $(document).ready(function () {
-  // $("#eingsresume_lol").hide();
-
-  // $("#resume,#r_in_about").click(function() {
-  //   $("#eingsresume_lol").show();
-  // }); 
-  //  $("#xresume").click(function() {
-  //   $("#eingsresume_lol").hide();
-
-  //  });          
-// });
-
-// // _________________________
-
-// $(document).ready(function () {
-  // $("#about-window").hide();
-
-  // $("#about").click(function() {
-  //   $("#about-window").show();
-  // }); 
-
-  //  $("#xabout").click(function() {
-  //   $("#about-window").hide();
-  // }); 
-// });
-
-
-//--------S T I C K Y -------///
-
+//Oh boi it's 1:19am and the entire thing kinda broke - Mon Apr 9
 
 $(document).ready(function () {
   $("#stickyandx").hide();
@@ -90,17 +47,6 @@ $(function () {
   });
 });
 
-// VVVIIIIDDDEEEEEEOOOSSS
-//$(document).ready(function(){
-// if ($('.productDescription').is(':visible')) {
-//       player.pauseVideo();
-//      }
-//  else {
-//       player.playVideo();
-//      }
-//    }); 
-
-// toggle
 
 $(document).ready(function () {
   $(".detailed-project-windows").hide();
