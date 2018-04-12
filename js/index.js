@@ -54,9 +54,16 @@ $(this).parent().hide(".detailed-project-windows");
 $(document).ready(function() {
   var a = 500;
 
-	$('#work-window').draggable({
-	   handle: '.bar'
-});
+//	$('#work-window').draggable({
+//	   handle: '.bar'
+//});
+//	
+	  $('#work-window').draggable({
+    start: function(event, ui) {
+      $('#work-window').css("z-index", a++);
+	}   
+  });
+	
 	
 //	$('#work-window .bar').click(function() {
 //    $('#work-window').css("z-index", a++);
@@ -68,17 +75,17 @@ $(document).ready(function() {
   $('.detailed-project-windows,#window-about,#window-contact').draggable({
     start: function(event, ui) {
       $(this).css("z-index", a++);
-	}
-	   
+	}   
   });
 
- $('#works').click(function() {
+ $('#works, .workbar').click(function() {
     $('#work-window').css("z-index", a++);
   });
 	
   $('.detailed-project-windows').click(function() {
     $(this).css("z-index", a++);
   });
+
 	
   $('#about,#window-about').click(function() {
     $('#window-about').css("z-index", a++);
@@ -89,10 +96,6 @@ $(document).ready(function() {
 	
 
 // new codes UP
-// new codes
-// new codes
-// new codes
-// new codes
 // new codes
 // new codes
 // new codes
@@ -272,34 +275,5 @@ $( function() {
 //});
 //
 // });
-
-
-
-//  d r a g     b a c k g r o u n d
-
- 
-
-//    $("#eingandnav").draggable({
-//     handle: "#einglogo"
-//}); 
-
-});
-
-
-// new codes
-// new codes
-// new codes
-// new codes
-// new codes
-// new codes
-// new codes
-// new codes
-// new codes
-// new codes
-// new codes
-// new codes
-// new codes
-// new codes
-// new codes DOWN
 
 
