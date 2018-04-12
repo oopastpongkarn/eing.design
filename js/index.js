@@ -26,18 +26,6 @@ $(this).parent().hide(".detailed-project-windows");
     
 }); 
 
-// _________________________
-
-$(document).ready(function(){
-  $("#eingsresume_lol").hide();
-
-$("#resume,#r_in_about").click(function() {
-  $("#eingsresume_lol").show();
-  
- $("#xresume").click(function() {
-  $("#eingsresume_lol").hide();
-  
-});          });          });
 
 // _________________________
 
@@ -71,35 +59,52 @@ $(document).ready(function(){
 
 
 
+// Set up on DOM-ready
+$(document).ready(function() {
+  var a = 500;
 
-//+++++++++ STAY-LEAVE-+++++++++++//
+	$('#projects-window').draggable({
+	   handle: '.bar'
+});
+	
+//	$('#projects-window .bar').click(function() {
+//    $('#projects-window').css("z-index", a++);
+//  });
 
-$(document).ready(function(){
-  $("#leave-stay-window").hide();
+  $('.detailed-project-windows,#about-window,#contact-window').draggable({
+    start: function(event, ui) {
+      $(this).css("z-index", a++);
+    }
+  });
+
+ $('#works').click(function() {
+    $('#projects-window').css("z-index", a++);
+  });
+	
+  $('.detailed-project-windows').click(function() {
+    $(this).css("z-index", a++);
+  });
+	
+  $('#about,#about-window').click(function() {
+    $('#about-window').css("z-index", a++);
+  });
+  $('#contacteing,#contact-window').click(function() {
+    $('#contact-window').css("z-index", a++);
+  });
+	
+	
   
- $(".miniport").click(function() {
-  $("#leave-stay-window").show();
-  
-});          });
 
 
-$(function(){
-  
- $("#stay").click(function() {
-  $("#leave-stay-window").hide();
-
-  
-});          }); 
-
-// VVVIIIIDDDEEEEEEOOOSSS
-//$(document).ready(function(){
-// if ($('.productDescription').is(':visible')) {
-//       player.pauseVideo();
-//      }
-//  else {
-//       player.playVideo();
-//      }
-//    }); 
+// new codes UP
+// new codes
+// new codes
+// new codes
+// new codes
+// new codes
+// new codes
+// new codes
+// new codes
 
 
 // detailed projects windows down
@@ -108,154 +113,130 @@ $(function(){
 // detailed projects windows down
 
 //abookaboutablock
-$(document).ready(function(){
+
 $("#abookaboutablock").click(function() {
   $("#abookaboutablock-detail").show();
-//    document.body.style.background = "#818181";
+	
   
  $("#xabookaboutablock").click(function() {
   $("#abookaboutablock-detail").hide();
-//     document.body.style.background = "#c6c6c6";
   
-});          });          });
+});          });    
 
 //bobaboba
-$(document).ready(function(){
+
 $("#bobaboba").click(function() {
   $("#bobaboba-detail").show();
-//    document.body.style.background = "#818181";
   
  $("#xbobaboba").click(function() {
   $("#bobaboba-detail").hide();
-//     document.body.style.background = "#c6c6c6";
   
-});          });          });
+});          });      
 
 //chrysp
-$(document).ready(function(){
+
 $("#chrysp").click(function() {
   $("#chrysp-detail").show();
-//    document.body.style.background = "#818181";
   
  $("#xchrysp").click(function() {
   $("#chrysp-detail").hide();
-//     document.body.style.background = "#c6c6c6";
   
-});          });          });
+});          });         
 
 //filled
-$(document).ready(function(){
+
 $("#filled").click(function() {
   $("#filled-detail").show();
-//    document.body.style.background = "#818181";
   
  $("#xfilled").click(function() {
   $("#filled-detail").hide();
-//     document.body.style.background = "#c6c6c6";
   
-});          });          });
+});          });  
 
 
 //appstore
-$(document).ready(function(){
+
 $("#appstore").click(function() {
   $("#appstore-detail").show();
-//    document.body.style.background = "#818181";
   
  $("#xappstore").click(function() {
   $("#appstore-detail").hide();
-//     document.body.style.background = "#c6c6c6";
   
-});          });          });
+});          });      
 
 
 //pong
-$(document).ready(function(){
+
 $("#pong").click(function() {
   $("#pong-detail").show();
-//    document.body.style.background = "#818181";
   
  $("#xpong").click(function() {
   $("#pong-detail").hide();
-//     document.body.style.background = "#c6c6c6";
   
-});          });          });
+});          });      
 
 
 //l3r
-$(document).ready(function(){
+
 $("#l3r").click(function() {
   $("#l3r-detail").show();
-//    document.body.style.background = "#818181";
   
  $("#xl3r").click(function() {
   $("#l3r-detail").hide();
-//     document.body.style.background = "#c6c6c6";
   
-});          });          });
+});          });      
 
 //bart
-$(document).ready(function(){
+
 $("#bart").click(function() {
   $("#bart-detail").show();
-//    document.body.style.background = "#818181";
   
  $("#xbart").click(function() {
   $("#bart-detail").hide();
-//     document.body.style.background = "#c6c6c6";
   
-});          });          });
+});          });      
 
 //soundjourney
-$(document).ready(function(){
+
 $("#soundjourney").click(function() {
   $("#soundjourney-detail").show();
-//    document.body.style.background = "#818181";
   
  $("#xsoundjourney").click(function() {
   $("#soundjourney-detail").hide();
-//     document.body.style.background = "#c6c6c6";
   
-});          });          });
+});          });      
 
 //sula
-$(document).ready(function(){
+
 $("#sula").click(function() {
   $("#sula-detail").show();
-//    document.body.style.background = "#818181";
   
  $("#xsula").click(function() {
   $("#sula-detail").hide();
-//     document.body.style.background = "#c6c6c6";
   
-});          });          });
+});          });      
 
 //cheese
-$(document).ready(function(){
+
 $("#cheese").click(function() {
   $("#cheese-detail").show();
-//    document.body.style.background = "#818181";
   
  $("#xcheese").click(function() {
   $("#cheese-detail").hide();
-//     document.body.style.background = "#c6c6c6";
   
-});          });          });
+});          });      
 
 //storycenter
-$(document).ready(function(){
+
 $("#storycenter").click(function() {
   $("#storycenter-detail").show();
-//    document.body.style.background = "#818181";
   
  $("#xstorycenter").click(function() {
   $("#storycenter-detail").hide();
-//     document.body.style.background = "#c6c6c6";
   
-});          });          });
+});          }); 
 
 //eee
-$(document).ready(function(){
 $("#eee").click(function() {
   $("#eee-detail").show();
 //    document.body.style.background = "#818181";
@@ -264,45 +245,69 @@ $("#eee").click(function() {
   $("#eee-detail").hide();
 //     document.body.style.background = "#c6c6c6";
   
-});          });          });
-
-
-
-
-// this makes the popup windows draggable!!!
-// this makes the popup windows draggable!!!
-// this makes the popup windows draggable!!!
-// this makes the popup windows draggable!!!
+});          });          
 
 $( function() {
-	var a = 500;
 
-//bar
-   $('#projects-window,.detailed-project-windows').draggable({handle: '.bar'
+   $( ".movethis,#leave-stay-window,#einglogo,#about,#contacteing,#works,#statement" ).draggable({
+         
+}); 
+
 });
 
-//contain in the imaginary bounding box
-   $( "#projects-window,.detailed-project-windows" ).draggable({
-  containment: [-800, 0, 1350, 850] });
 
-	$( "#projects-window,#statement,#contact-window,.detailed-project-windows" ).draggable({
-start: function(event, ui) { $(this).css("z-index", a++); }
-});
 
- });
+
+// this makes the popup windows draggable!!!
+// this makes the popup windows draggable!!!
+// this makes the popup windows draggable!!!
+// this makes the popup windows draggable!!!
+
+//$( function() {
+//	var a = 500;
+//
+////bar
+//   $('#projects-window,.detailed-project-windows').draggable({
+//	   handle: '.bar'
+//});
+//
+////contain in the imaginary bounding box
+//   $( "#projects-window,.detailed-project-windows" ).draggable({
+//  containment: [-800, 0, 1350, 850] });
+//
+//	$( "#projects-window,#statement,#contact-window,.detailed-project-windows" ).draggable({
+//start: function(event, ui) { $(this).css("z-index", a++); }
+//});
+//
+// });
 
 
 
 //  d r a g     b a c k g r o u n d
 
-$( function() {
-
-   $( ".movethis,#about-window,#leave-stay-window,#einglogo,#about,#contacteing,#works,#statement,#contact-window" ).draggable({
-         
-});  
+ 
 
 //    $("#eingandnav").draggable({
 //     handle: "#einglogo"
 //}); 
 
 });
+
+
+// new codes
+// new codes
+// new codes
+// new codes
+// new codes
+// new codes
+// new codes
+// new codes
+// new codes
+// new codes
+// new codes
+// new codes
+// new codes
+// new codes
+// new codes DOWN
+
+
