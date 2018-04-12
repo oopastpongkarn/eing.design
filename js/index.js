@@ -233,14 +233,11 @@ $("#storycenter").click(function() {
  $("#xstorycenter").click(function() {
   $("#storycenter-detail").hide();
   
-});  }); });
-
-       
-
-$( function() {
+});  }); 
 
    $( ".movethis,#leave-stay-window,#einglogo,#about,#contacteing,#works,#statement" ).draggable({
          
-}); 
 
-});
+}); 
+	
+	});	});
