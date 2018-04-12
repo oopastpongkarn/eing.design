@@ -229,18 +229,9 @@ $("#storycenter").click(function() {
  $("#xstorycenter").click(function() {
   $("#storycenter-detail").hide();
   
-});          }); 
+});  }); });
 
-//eee
-$("#eee").click(function() {
-  $("#eee-detail").show().css("z-index", a++);
-//    document.body.style.background = "#818181";
-  
- $("#xeee").click(function() {
-  $("#eee-detail").hide();
-//     document.body.style.background = "#c6c6c6";
-  
-});          });          
+       
 
 $( function() {
 
@@ -249,6 +240,7 @@ $( function() {
 }); 
 
 });
+
 
 
 
