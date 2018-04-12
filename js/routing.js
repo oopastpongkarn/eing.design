@@ -50,9 +50,9 @@
       $("[id^='window-']").hide();
       // then, show only the correct one
       switch (currentRoute) {
-        case "/work":
-          $("#window-work").show();
-          break;
+//        case "/work":
+//          $("#window-work").show();
+//          break;
         case "/contact":
           $("#window-contact").show();
           break;

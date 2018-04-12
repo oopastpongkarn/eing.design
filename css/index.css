@@ -190,7 +190,7 @@ article p{
 
 /* P R O J E C T S */
 
-#projects-window {
+#work-window {
 	width: 85%; 
 	height: 685px;
 	background-color: white;
@@ -360,7 +360,7 @@ C O N T E N T S */
 	opacity: 0.5;
 }
 
-#about-window {
+#window-about {
 	width: 400px; 
 	height: 315px;
 	background-color: white;
@@ -402,7 +402,7 @@ C O N T E N T S */
 	opacity: 0.5;
 }
 
-#contact-window {
+#window-contact {
 	width: 400px; 
 	height: 315px;
 	background-color: white;
