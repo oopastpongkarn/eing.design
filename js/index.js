@@ -1,44 +1,37 @@
 $(document).ready(function () {
 //  $("#work-window").show();
-	
 	 
  $("#xprojects").click(function() {
   $("#work-window").hide();
 
 $("#works").click(function() {
   $("#work-window").show();
- 
+	
+});          });          
+	
+	
+$("#window-about").hide();
+
+$("#about").click(function() {
+  $("#window-about").show();
   
-});          });          });
-//
-//// _________________________
-//
-//$(document).ready(function(){
-//  $("#window-about").hide();
-//
-//$("#about").click(function() {
-//  $("#window-about").show();
-//  
-// $("#xabout").click(function() {
-//  $("#window-about").hide();
-//  
-//});          });          });
-//
-// //--------C O N T A C T content -------///
-//
-//
-//$(document).ready(function(){
-//  $("#window-contact").hide();
-//
-//
-//   $("#contacteing").click(function() {
-//  $("#window-contact").show();
-//  
-//  
-// $("#xcontact").click(function() {
-//  $("#window-contact").hide();
-//  
-//});          });         }); 
+ $("#xabout").click(function() {
+  $("#window-about").hide();
+  
+});          });   
+	
+	
+$("#window-contact").hide();
+
+   $("#contacteing").click(function() {
+  $("#window-contact").show();
+   
+ $("#xcontact").click(function() {
+  $("#window-contact").hide();
+	 
+
+  
+});          });         }); 
 
 
 
@@ -61,27 +54,38 @@ $(this).parent().hide(".detailed-project-windows");
 $(document).ready(function() {
   var a = 500;
 
-	$('#work-window').draggable({
-	   handle: '.bar'
-});
+//	$('#work-window').draggable({
+//	   handle: '.bar'
+//});
+//	
+	  $('#work-window').draggable({
+    start: function(event, ui) {
+      $('#work-window').css("z-index", a++);
+	}   
+  });
+	
 	
 //	$('#work-window .bar').click(function() {
 //    $('#work-window').css("z-index", a++);
 //  });
+	
+     $( "#work-window,.detailed-project-windows" ).draggable({
+  containment: [-800, 0, 1350, 850] });
 
   $('.detailed-project-windows,#window-about,#window-contact').draggable({
     start: function(event, ui) {
       $(this).css("z-index", a++);
-    }
+	}   
   });
 
- $('#works').click(function() {
+ $('#works, .workbar').click(function() {
     $('#work-window').css("z-index", a++);
   });
 	
   $('.detailed-project-windows').click(function() {
     $(this).css("z-index", a++);
   });
+
 	
   $('#about,#window-about').click(function() {
     $('#window-about').css("z-index", a++);
@@ -90,15 +94,8 @@ $(document).ready(function() {
     $('#window-contact').css("z-index", a++);
   });
 	
-	
-  
-
 
 // new codes UP
-// new codes
-// new codes
-// new codes
-// new codes
 // new codes
 // new codes
 // new codes
@@ -113,9 +110,9 @@ $(document).ready(function() {
 //abookaboutablock
 
 $("#abookaboutablock").click(function() {
-  $("#abookaboutablock-detail").show();
+  $("#abookaboutablock-detail").show().css("z-index", a++);
+
 	
-  
  $("#xabookaboutablock").click(function() {
   $("#abookaboutablock-detail").hide();
   
@@ -124,7 +121,7 @@ $("#abookaboutablock").click(function() {
 //bobaboba
 
 $("#bobaboba").click(function() {
-  $("#bobaboba-detail").show();
+  $("#bobaboba-detail").show().css("z-index", a++);
   
  $("#xbobaboba").click(function() {
   $("#bobaboba-detail").hide();
@@ -134,7 +131,7 @@ $("#bobaboba").click(function() {
 //chrysp
 
 $("#chrysp").click(function() {
-  $("#chrysp-detail").show();
+  $("#chrysp-detail").show().css("z-index", a++);
   
  $("#xchrysp").click(function() {
   $("#chrysp-detail").hide();
@@ -144,7 +141,7 @@ $("#chrysp").click(function() {
 //filled
 
 $("#filled").click(function() {
-  $("#filled-detail").show();
+  $("#filled-detail").show().css("z-index", a++);
   
  $("#xfilled").click(function() {
   $("#filled-detail").hide();
@@ -155,7 +152,7 @@ $("#filled").click(function() {
 //appstore
 
 $("#appstore").click(function() {
-  $("#appstore-detail").show();
+  $("#appstore-detail").show().css("z-index", a++);
   
  $("#xappstore").click(function() {
   $("#appstore-detail").hide();
@@ -166,7 +163,7 @@ $("#appstore").click(function() {
 //pong
 
 $("#pong").click(function() {
-  $("#pong-detail").show();
+  $("#pong-detail").show().css("z-index", a++);
   
  $("#xpong").click(function() {
   $("#pong-detail").hide();
@@ -177,7 +174,7 @@ $("#pong").click(function() {
 //l3r
 
 $("#l3r").click(function() {
-  $("#l3r-detail").show();
+  $("#l3r-detail").show().css("z-index", a++);
   
  $("#xl3r").click(function() {
   $("#l3r-detail").hide();
@@ -187,7 +184,7 @@ $("#l3r").click(function() {
 //bart
 
 $("#bart").click(function() {
-  $("#bart-detail").show();
+  $("#bart-detail").show().css("z-index", a++);
   
  $("#xbart").click(function() {
   $("#bart-detail").hide();
@@ -197,7 +194,7 @@ $("#bart").click(function() {
 //soundjourney
 
 $("#soundjourney").click(function() {
-  $("#soundjourney-detail").show();
+  $("#soundjourney-detail").show().css("z-index", a++);
   
  $("#xsoundjourney").click(function() {
   $("#soundjourney-detail").hide();
@@ -207,7 +204,7 @@ $("#soundjourney").click(function() {
 //sula
 
 $("#sula").click(function() {
-  $("#sula-detail").show();
+  $("#sula-detail").show().css("z-index", a++);
   
  $("#xsula").click(function() {
   $("#sula-detail").hide();
@@ -217,7 +214,7 @@ $("#sula").click(function() {
 //cheese
 
 $("#cheese").click(function() {
-  $("#cheese-detail").show();
+  $("#cheese-detail").show().css("z-index", a++);
   
  $("#xcheese").click(function() {
   $("#cheese-detail").hide();
@@ -227,23 +224,14 @@ $("#cheese").click(function() {
 //storycenter
 
 $("#storycenter").click(function() {
-  $("#storycenter-detail").show();
+  $("#storycenter-detail").show().css("z-index", a++);
   
  $("#xstorycenter").click(function() {
   $("#storycenter-detail").hide();
   
-});          }); 
+});  }); });
 
-//eee
-$("#eee").click(function() {
-  $("#eee-detail").show();
-//    document.body.style.background = "#818181";
-  
- $("#xeee").click(function() {
-  $("#eee-detail").hide();
-//     document.body.style.background = "#c6c6c6";
-  
-});          });          
+       
 
 $( function() {
 
@@ -252,6 +240,7 @@ $( function() {
 }); 
 
 });
+
 
 
 
@@ -278,48 +267,4 @@ $( function() {
 //});
 //
 // });
-
-
-
-//  d r a g     b a c k g r o u n d
-
- 
-
-//    $("#eingandnav").draggable({
-//     handle: "#einglogo"
-//}); 
-
-});
-
-
-<<<<<<< Updated upstream
-// new codes
-// new codes
-// new codes
-// new codes
-// new codes
-// new codes
-// new codes
-// new codes
-// new codes
-// new codes
-// new codes
-// new codes
-// new codes
-// new codes
-// new codes DOWN
-
-=======
-// click a window, a window comes forward
-// click a window, a window comes forward
-// click a window, a window comes forward
-// click a window, a window comes forward
-// click a window, a window comes forward
-// click a window, a window comes forward
-// click a window, a window comes forward
-// click a window, a window comes forward
-// click a window, a window comes forward
-// click a window, a window comes forward
-// click a window, a window comes forward
->>>>>>> Stashed changes
 
