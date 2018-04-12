@@ -138,9 +138,9 @@ article p{
 
 .movethis {
 	width: 110vw;
-	height: 120vh;
+	height: 115vh;
 	position: absolute;
-	margin-top: -30px;
+	margin-top: -7.5vh;
 	z-index: -1;
 	cursor: move;
 	/*    opacity: 0.3;*/
