@@ -58,8 +58,6 @@ $(this).parent().hide(".detailed-project-windows");
 }); 
 
 
-
-// Set up on DOM-ready
 $(document).ready(function() {
   var a = 500;
 
