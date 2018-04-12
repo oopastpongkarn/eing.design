@@ -14,17 +14,14 @@ $("#window-about").hide();
 
 $("#about").click(function() {
   $("#window-about").show();
-<<<<<<< HEAD
   
  $("#xabout").click(function() {
   $("#window-about").hide();
   
-=======
   
  $("#xabout").click(function() {
   $("#window-about").hide();
   
->>>>>>> origin/master
 });          });   
 	
 	
@@ -247,34 +244,3 @@ $( function() {
 }); 
 
 });
-<<<<<<< HEAD
-=======
-
-
-
-
-
-// this makes the popup windows draggable!!!
-// this makes the popup windows draggable!!!
-// this makes the popup windows draggable!!!
-// this makes the popup windows draggable!!!
-
-//$( function() {
-//	var a = 500;
-//
-////bar
-//   $('#work-window,.detailed-project-windows').draggable({
-//	   handle: '.bar'
-//});
-//
-////contain in the imaginary bounding box
-//   $( "#work-window,.detailed-project-windows" ).draggable({
-//  containment: [-800, 0, 1350, 850] });
-//
-//	$( "#work-window,#statement,#window-contact,.detailed-project-windows" ).draggable({
-//start: function(event, ui) { $(this).css("z-index", a++); }
-//});
-//
-// });
-
->>>>>>> origin/master
