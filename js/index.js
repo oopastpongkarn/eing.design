@@ -291,6 +291,36 @@ start: function(event, ui) { $(this).css("z-index", a++); }
 
  });
 
+document.getElementById("works").onclick = function() {myFunction()};
+
+function myFunction() {
+    document.getElementById("projects-window").css("z-index", a++); }
+
+
+
+
+
+//sendontop
+
+//function sendontop(div_id) {
+//  if (typeOf(div_id)=="string") {
+//    div_id=document.getElementById(div_id);
+//  }
+//  div_id.style.zIndex = a++;
+//}
+//
+//
+//$(document).ready(function(){
+//$("#storycenter").click(function() {
+//  $("#storycenter-detail").show();
+////    document.body.style.background = "#818181";
+//  
+// $("#xstorycenter").click(function() {
+//  $("#storycenter-detail").hide();
+////     document.body.style.background = "#c6c6c6";
+//  
+//});          });          });
+
  
 ///////////////////
 

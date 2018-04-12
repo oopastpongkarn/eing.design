@@ -34,7 +34,7 @@ setTimeout("scrlsts()", 50);
 
 		<!--title in bar of the browser-->
 		<script language=javascript>
-			var title = new MovingTitle(" e e e e e e e i i i i i i i n n n n n n n g g g g g g g ", 110, 18);
+			var title = new MovingTitle(" My name is Eing and I design things :) ", 110, 18);
 			title.init();
 
 			function MovingTitle(writeText, interval, visibleLetters) {
@@ -67,6 +67,87 @@ setTimeout("scrlsts()", 50);
 
 		</script>
 
+<!--
+<script language="JavaScript">
+  var message = new Array();
+  message[0] = ""
+  var reps = 2;
+  var speed = 444; 
+  var p = message.length;
+  var T = "";
+  var C = 0;
+  var mC = 0;
+  var s = 0;
+  var sT = null;
+  if (reps < 1) reps = 1;
+  function doIt() {
+  T = message[mC];
+  A();
+  }
+  function A() {
+  s++;
+  if (s > 10) { s = 1;}
+  if (s == 1) { document.title = 'My name is Eing and I design things:)'; }
+  if (s == 2) { document.title = 'name is Eing and I design things:)'; }
+  if (s == 3) { document.title = 'is Eing and I design things:)'; }
+  if (s == 4) { document.title = 'Eing and I design things:)'; }
+  if (s == 5) { document.title = 'and I design things:)'; }
+  if (s == 6) { document.title = 'I design things:)'; }
+  if (s == 7) { document.title = 'design things:)'; }
+  if (s == 8) { document.title = 'things:)'; }
+  if (s == 9) { document.title = ':)'; }if (C < (9 * reps)) {
+  sT = setTimeout("A()", speed);
+  C++;
+  }
+  else {
+  C = 0;
+  s = 0;
+  mC++;
+  if(mC > p - 1) mC = 0;
+  sT = null;
+  doIt();
+     }
+  }
+  doIt();
+
+  (function() {
+    var template = '✊☔☁☁☁☠⛔☁☁☁⏳☔⚠☁☁⛔⏳☠💣✊🏾'.split(''),
+      len = template.length,
+      chars, string, i, j, k,
+      pushOrHash = typeof window.history.pushState === 'function',
+    
+    increase = function(n) {
+      return n < len - 1 ? n + 1 : 0;
+    },
+    
+    update = function() {
+      chars = [];
+      j = k;
+      
+      for (i=0; i<len; i++) {
+        j = increase(j);
+        chars[i] = template[j];
+      }
+      
+      string = ['/', chars.join(''), '/'].join('');
+      k = increase(k);
+      
+      if (pushOrHash) {
+        window.history.pushState(null, null, string);
+      } else {
+        window.document.location.hash = string;
+      }
+      
+      setTimeout(update, 1000);
+    };
+    
+    update();
+  })();
+  </script>
+-->
+		
+		
+		
 
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -154,6 +235,10 @@ setTimeout("scrlsts()", 50);
 			<img src="img/statement.svg"> </div>
 
 		<div id="works" class="theicons">
+			 
+<!--			 onClick="document.getElementById('projects-window').style.zIndex='1100'"-->
+			 
+			 
 			<img src="img/workicon.svg"></div>
 
 		<div id="about" class="theicons">
