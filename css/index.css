@@ -75,6 +75,7 @@ article p{
 }
 
 
+
 ::selection {
 	color: white;
 	background-color: black;
@@ -226,6 +227,46 @@ article p{
 	margin-top: -30px;
 	cursor: pointer;
 	font-size: 23px;
+}
+
+.xclosemex a {
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.xclosemex a:hover {
+	background-color: transparent;
+	text-decoration: none;
+}
+
+#works a {
+	background-color: transparent;
+	text-decoration: none;
+}
+
+#works a:hover {
+	background-color: transparent;
+	text-decoration: none;
+}
+
+#about a {
+	background-color: transparent;
+	text-decoration: none;
+}
+
+#about a:hover {
+	background-color: transparent;
+	text-decoration: none;
+}
+
+#contacteing a {
+	background-color: transparent;
+	text-decoration: none;
+}
+
+#contacteing a:hover {
+	background-color: transparent;
+	text-decoration: none;
 }
 
 .title-window {
