@@ -291,32 +291,6 @@ start: function(event, ui) { $(this).css("z-index", a++); }
 
  });
 
- 
-///////////////////
-
-// $('.click-to-front').click(function(){
-//     var topZ = 1000;
-//     $('.click-to-front').each(function(){
-//         var thisZ = parseInt($(this).css('z-index'), 500);
-//         if (thisZ > topZ){
-//             topZ = thisZ;
-//         }
-//     });
-//     $(this).css('z-index', topZ+1);
-// });
-
-// vVIDEO PLAY WHEN HOVEERRREDD
-
-
-var figure = $("#type2-id-trick-vid").hover( hoverVideo, hideVideo );
-
-function hoverVideo(e) {  
-    $('video', this).get(0).play(); 
-}
-
-function hideVideo(e) {
-    $('video', this).get(0).pause(); 
-}
 
 
 //  d r a g     b a c k g r o u n d
