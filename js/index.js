@@ -292,6 +292,7 @@ $( function() {
 });
 
 
+<<<<<<< Updated upstream
 // new codes
 // new codes
 // new codes
@@ -308,4 +309,17 @@ $( function() {
 // new codes
 // new codes DOWN
 
+=======
+// click a window, a window comes forward
+// click a window, a window comes forward
+// click a window, a window comes forward
+// click a window, a window comes forward
+// click a window, a window comes forward
+// click a window, a window comes forward
+// click a window, a window comes forward
+// click a window, a window comes forward
+// click a window, a window comes forward
+// click a window, a window comes forward
+// click a window, a window comes forward
+>>>>>>> Stashed changes
 
