@@ -29,19 +29,14 @@ setTimeout("scrlsts()", 50);
 -->
 
 
-
-
-
 		<!--title in bar of the browser-->
 		<script language=javascript>
 			var title = new MovingTitle(" e e e e e e e i i i i i i i n n n n n n n g g g g g g g ", 110, 18);
 			title.init();
-
 			function MovingTitle(writeText, interval, visibleLetters) {
 				var _instance = {};
 				var _currId = 0;
 				var _numberOfLetters = writeText.length;
-
 				function updateTitle() {
 					_currId += 1;
 					if (_currId > _numberOfLetters - 1) {
@@ -64,7 +59,6 @@ setTimeout("scrlsts()", 50);
 				};
 				return _instance;
 			}
-
 		</script>
 
 
@@ -76,44 +70,26 @@ setTimeout("scrlsts()", 50);
 
 		<link rel="stylesheet" type="text/css" href="css/typeface/typeface.css">
 
-		<script>
-			try {
-				Typekit.load({
-					async: true
-				});
-			} catch (e) {}
-
-		</script>
+		<script>try { Typekit.load({ async: true }); } catch (e) { }</script>
 		<script src="js/jquery-2.2.3.min.js"></script>
 		<script src="js/index.js"></script>
 		<script src="https://use.typekit.net/uqz1tyv.js"></script>
-		<script>
-			try {
-				Typekit.load({
-					async: true
-				});
-			} catch (e) {}
+		<script>try { Typekit.load({ async: true }); } catch (e) { }</script>
 
-		</script>
-
-
+		<script src="js/routing.js"></script>
 
 		<!--description+name in search engine-->
 		<meta name="title" content="eing.design">
 		<meta name="author" content="Eing Onusa Opastpongkarn">
-		<meta name="description" content="eing's graphic design portfolio">
+		<meta name="description" content="Eing's portfolio">
 		<!--description+name-->
 		<meta property="og:title" content="eing.design">
-		<meta property="og:description" content="eing's graphic design portfolio">
+		<meta property="og:description" content="Eing's portfolio">
 
 		<!--G O O G L E  S T U F F-->
-		
 		<meta name="google-site-verification" content="PERpXaAqe-HmgFCDYs-gDnAXqPRm_qUsL0cGwisgom0" />
 		<meta name="google" content="nositelinkssearchbox" />
 		<meta name="google" content="notranslate" />
-
-
-
 	</head>
 
 	<body>
@@ -143,11 +119,6 @@ setTimeout("scrlsts()", 50);
 
 		<div class="movethis" id="bg5"></div>
 
-		<!--
-
-<div class="movethis" id="pink" ></div>
-<div class="movethis" id="orange" ></div>
--->
 
 		<div id="einglogo">
 			<img src="img/einglogo.png"> </div>
@@ -156,27 +127,37 @@ setTimeout("scrlsts()", 50);
 			<img src="img/statement.svg"> </div>
 
 		<div id="works" class="theicons">
-			<img src="img/workicon.svg"></div>
+			<a href="/work"><img src="img/workicon.svg"></a>
+		</div>
 
 		<div id="about" class="theicons">
-			<img src="img/abouticon.svg"></div>
+			<a href="/about"><img src="img/abouticon.svg"></a>
+		</div>
 
 		<div id="contacteing" class="theicons">
-			<img src="img/contacticon.svg"></div>
+			<a href="/contact"><img src="img/contacticon.svg"></a>
+		</div>
+
+		
+		<div id="window-contact">
+			<a href="/"><span class="xclosemex" id="xcontact"> x </span></a>
+			<div id="contact-content">
+				<span id="eingonusa">  
+					Eing (Onusa) Opastpongkarn </span>
+				<span id="gd">  
+					graphic designer / San Francisco </span>
+
+				<a href="mailto:hi@eing.design?subject=Hi there"> hi@eing.design</a>
+
+			</div>
+		</div>
 
 
-		<!-- <div id="resume"></div> 
-<div id="r-icon"> <img src="img/res.png" width="110"></div>
-</div> -->
-
-
-
-
-		<div id="projects-window" class="click-to-front">
+		<div id="work-window" class="click-to-front">
 			<div class="bar">
 				<div class="title-window">work</div>
 			</div>
-			<div class="xclosemex" id="xprojects">x</div>
+			<div class="xclosemex" id="xprojects"><a href="/">x</a></div>
 			<div id="projects-content">
 
 				<!-- name thumbnail  -->
@@ -718,7 +699,7 @@ setTimeout("scrlsts()", 50);
 				<div class="headimg">
 					<img src="img/work/cheese/cheese.jpg">
 				</div>
-				
+
 				<article>
 					<h1>Cheese and Crack</h1>
 					<h6>Typeface / poster / 2017</h6>
@@ -731,8 +712,8 @@ setTimeout("scrlsts()", 50);
 				<div class="headimg">
 					<img src="img/work/cheese/cheese1.jpg" >
 				</div>
-				
-				
+
+
 
 			</div>
 			<!-- detailed project content -->
@@ -751,7 +732,7 @@ setTimeout("scrlsts()", 50);
 				<div class="headimg">
 					<img src="img/work/storycenter/storyboard1.JPG">
 				</div>
-				
+
 				<article>
 					<h1>StoryCenter video</h1>
 					<h6>Video / 2017</h6>
@@ -760,67 +741,67 @@ setTimeout("scrlsts()", 50);
 					<p>As a part of <a href="http://tbdcca.com">TBD*</a> at CCA, I worked with the <a href="http://storycenter.org">StoryCenter</a> team to create a simple and straightforward animation video that accurately conveys the depth and breadth of what StoryCenter does by focusing on their digital storytelling workshop methodology, and what it offers to help broadcast their message to a wider audience. StoryCenter is a non profit organization that values digital storytelling as a way to empower others.
 					</p>
 				</article>
-				
+
 				<div id="pong_video">
 					<iframe src="https://player.vimeo.com/video/247275750?loop=1&color=ffffff&title=0&byline=0&portrait=0" width="970" height="auto" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 				</div>
 
 				<article style="padding-bottom:0%;"> First storyboard sketch and charactor explorations</article>
-				
+
 				<div class="oneblownimg">
 					<img src="img/work/storycenter/sketch1.JPG">
 					<img src="img/work/storycenter/sketch2.JPG">
 				</div>
-				
+
 				<article style="padding-bottom:0%;"> Illustration style explorations</article>
 				<div class="oneimg">
 					<img src="img/work/storycenter/ae.png">
 				</div>
-				
-				
+
+
 				<article style="padding-bottom:0%;"> Sketches of the first and second round of storyboarding</article>
 				<div class="twoimg">
 					<img src="img/work/storycenter/storyboard1.jpg">
 					<img src="img/work/storycenter/storyboard2.jpg">
 				</div>
-				
-				
+
+
 				<div class="oneimg">
 					<img src="img/work/storycenter/sketch3.JPG">
 				</div>
-				
+
 				<article> Screenshots of animation process</article>
 				<div class="headimg">
 					<img src="img/work/storycenter/dudes.png">
 				</div>
-				
+
 				<article style="padding-bottom:0%;"> Still images </article>
-				
+
 				<div class="oneimg">
 					<img src="img/work/storycenter/still1.png">
 				</div>
-				
+
 				<div class="headimg">
 					<img src="img/work/storycenter/still2.png">
 				</div>
-				
+
 				<div class="oneblownimg">
 					<img src="img/work/storycenter/still3.png">
 				</div>
-				
+
 				<div class="oneimg">
 					<img src="img/work/storycenter/still4.png">
 				</div>
-				
+
 				<div class="twoimg">
 					<img src="img/work/storycenter/still5.png">
 					<img src="img/work/storycenter/still6.png">
 				</div>
-				
-				
-				
 
-				
+
+
+
+
 			</div>
 			<!-- detailed project content -->
 		</div>
@@ -868,29 +849,9 @@ setTimeout("scrlsts()", 50);
 		<!-- /////hey :)//// -->
 
 
-		<div id="contact-window">
+		<div id="window-about">
 
-			<div class="xclosemex" id="xcontact">x</div>
-			<div id="contact-content">
-
-
-				<span id="eingonusa">  
-					Eing (Onusa) Opastpongkarn
-				</span>
-				<span id="gd">  
-					graphic designer / San Francisco 
-				</span>
-
-				<a href="mailto:hi@eing.design?subject=Hi there"> hi@eing.design</a>
-
-			</div>
-		</div>
-
-
-
-		<div id="about-window">
-
-			<div class="xclosemex" id="xabout">x</div>
+			<div class="xclosemex" id="xabout"><a href="/">x</a></div>
 			<div id="about-content">
 
 
@@ -903,21 +864,17 @@ setTimeout("scrlsts()", 50);
 		</div>
 
 
-
-
-
-
 		<!--   
 ──────▄▀▄─────▄▀▄   windows
 ─────▄█░░▀▀▀▀▀░░█▄
 ─▄▄──█░░░░░░░░░░░█──▄▄  icons
 █▄▄█─█░░▀░░┬░░▀░░█─█▄▄█ -->
 
-	</body>
 
 
 
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+<!--	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
+	</body>
 </html>

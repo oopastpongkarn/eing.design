@@ -1,15 +1,46 @@
 $(document).ready(function () {
-  $("#projects-window").show();
+//  $("#work-window").show();
 	
 	 
  $("#xprojects").click(function() {
-  $("#projects-window").hide();
+  $("#work-window").hide();
 
 $("#works").click(function() {
-  $("#projects-window").show();
+  $("#work-window").show();
  
   
 });          });          });
+//
+//// _________________________
+//
+//$(document).ready(function(){
+//  $("#window-about").hide();
+//
+//$("#about").click(function() {
+//  $("#window-about").show();
+//  
+// $("#xabout").click(function() {
+//  $("#window-about").hide();
+//  
+//});          });          });
+//
+// //--------C O N T A C T content -------///
+//
+//
+//$(document).ready(function(){
+//  $("#window-contact").hide();
+//
+//
+//   $("#contacteing").click(function() {
+//  $("#window-contact").show();
+//  
+//  
+// $("#xcontact").click(function() {
+//  $("#window-contact").hide();
+//  
+//});          });         }); 
+
+
 
 // _________________________
 
@@ -27,69 +58,38 @@ $(this).parent().hide(".detailed-project-windows");
 }); 
 
 
-// _________________________
-
-$(document).ready(function(){
-  $("#about-window").hide();
-
-$("#about").click(function() {
-  $("#about-window").show();
-  
- $("#xabout").click(function() {
-  $("#about-window").hide();
-  
-});          });          });
-
-
- //--------C O N T A C T content -------///
-
-
-$(document).ready(function(){
-  $("#contact-window").hide();
-
-
-   $("#contacteing").click(function() {
-  $("#contact-window").show();
-  
-  
- $("#xcontact").click(function() {
-  $("#contact-window").hide();
-  
-});          });         }); 
-
-
 
 // Set up on DOM-ready
 $(document).ready(function() {
   var a = 500;
 
-	$('#projects-window').draggable({
+	$('#work-window').draggable({
 	   handle: '.bar'
 });
 	
-//	$('#projects-window .bar').click(function() {
-//    $('#projects-window').css("z-index", a++);
+//	$('#work-window .bar').click(function() {
+//    $('#work-window').css("z-index", a++);
 //  });
 
-  $('.detailed-project-windows,#about-window,#contact-window').draggable({
+  $('.detailed-project-windows,#window-about,#window-contact').draggable({
     start: function(event, ui) {
       $(this).css("z-index", a++);
     }
   });
 
  $('#works').click(function() {
-    $('#projects-window').css("z-index", a++);
+    $('#work-window').css("z-index", a++);
   });
 	
   $('.detailed-project-windows').click(function() {
     $(this).css("z-index", a++);
   });
 	
-  $('#about,#about-window').click(function() {
-    $('#about-window').css("z-index", a++);
+  $('#about,#window-about').click(function() {
+    $('#window-about').css("z-index", a++);
   });
-  $('#contacteing,#contact-window').click(function() {
-    $('#contact-window').css("z-index", a++);
+  $('#contacteing,#window-contact').click(function() {
+    $('#window-contact').css("z-index", a++);
   });
 	
 	
@@ -267,15 +267,15 @@ $( function() {
 //	var a = 500;
 //
 ////bar
-//   $('#projects-window,.detailed-project-windows').draggable({
+//   $('#work-window,.detailed-project-windows').draggable({
 //	   handle: '.bar'
 //});
 //
 ////contain in the imaginary bounding box
-//   $( "#projects-window,.detailed-project-windows" ).draggable({
+//   $( "#work-window,.detailed-project-windows" ).draggable({
 //  containment: [-800, 0, 1350, 850] });
 //
-//	$( "#projects-window,#statement,#contact-window,.detailed-project-windows" ).draggable({
+//	$( "#work-window,#statement,#window-contact,.detailed-project-windows" ).draggable({
 //start: function(event, ui) { $(this).css("z-index", a++); }
 //});
 //
