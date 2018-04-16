@@ -54,10 +54,7 @@ $(document).ready(function () {
 	$(document).ready(function() {
 		var a = 500;
 
-		//	$('#work-window').draggable({
-		//	   handle: '.bar'
-		//});
-		//	
+	
 
 		$('#work-window').draggable({
 			start: function(event, ui) {
@@ -66,9 +63,7 @@ $(document).ready(function () {
 		});
 
 
-		//	$('#work-window .bar').click(function() {
-		//    $('#work-window').css("z-index", a++);
-		//  });
+	
 
 		$( "#work-window,.detailed-project-windows" ).draggable({
 			containment: [-800, 0, 1350, 850] });
