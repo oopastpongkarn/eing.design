@@ -19,9 +19,6 @@ $("#about").click(function() {
   $("#window-about").hide();
   
   
- $("#xabout").click(function() {
-  $("#window-about").hide();
-  
 });          });   
 	
 	
@@ -32,10 +29,9 @@ $("#window-contact").hide();
    
  $("#xcontact").click(function() {
   $("#window-contact").hide();
-	 
 
   
-});          });         }); 
+});          });   
 
 
 
@@ -205,13 +201,13 @@ $("#soundjourney").click(function() {
   
 });          });      
 
-//sula
+//neverlame
 
-$("#sula").click(function() {
-  $("#sula-detail").show().css("z-index", a++);
+$("#neverlame").click(function() {
+  $("#neverlame-detail").show().css("z-index", a++);
   
- $("#xsula").click(function() {
-  $("#sula-detail").hide();
+ $("#xneverlame").click(function() {
+  $("#neverlame-detail").hide();
   
 });          });      
 
@@ -223,7 +219,7 @@ $("#cheese").click(function() {
  $("#xcheese").click(function() {
   $("#cheese-detail").hide();
   
-});          });      
+});          });    
 
 //storycenter
 
