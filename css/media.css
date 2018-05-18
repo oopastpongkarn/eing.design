@@ -7,15 +7,56 @@
 	#smallscreen {
 		width: 100vw;
 		height: 100vh;
+		text-align: center;
+		margin-top: 16%;
 	}
+	
+	#smallscreen img {
+		visibility: visible;
+		  height: 10em;
+		  width: auto;
+	  }
 	
 	#smallscreen h2{
 		visibility: visible;
 		position: absolute;
 		color: white;
-		font-size: 3em;
+		font-size: 2em;
+		padding: 0% 2% 0% 2%;
 	}
 }
+
+/*iphone*/
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+
+	html body * {
+		visibility: hidden;
+	}
+	}
+	
+	#smallscreen {
+		width: 100vw;
+		height: 100vh;
+		text-align: center;
+		margin-top: 16%;
+	}
+	
+	#smallscreen img {
+		visibility: visible;
+		  height: 10em;
+		  width: auto;
+	  }
+	
+	#smallscreen h2{
+		visibility: visible;
+		position: absolute;
+		color: white;
+		font-size: 1.3em;
+		padding: 0% 2% 0% 2%;
+	}
+}
+
 
 
 
@@ -25,8 +66,8 @@
 		visibility: visible;
 	}
 	
-	#smallscreen h2{
-		display: none;		
+	#smallscreen{
+		display: none;
 	}
 
 }
