@@ -14,7 +14,7 @@ const Wrapper = styled.footer`
 
 const Footer = () => (
   <Wrapper data-testid="footer">
-    Copyright &copy; 2019. All right reserved. Pictures by Unsplash.{' '}
+    Copyright &copy; 2019 Eing. All right reserved.
   </Wrapper>
 )
 
