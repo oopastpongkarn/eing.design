@@ -6,7 +6,7 @@ module.exports = {
   siteTitleShort: "eing", // short_name for manifest
   siteUrl: "https://eing.design", // Domain of your site. No trailing slash!
   siteLanguage: "en", // Language Tag on <html> element
-  siteLogo: "/logo.png", // Used for SEO and manifest
+  siteLogo: "/favicon.png", // Used for SEO and manifest
   siteDescription: "Eing's portfolio",
   author: "Eing Onusa Opastpongkarn", // Author for schema.org JSONLD
 
