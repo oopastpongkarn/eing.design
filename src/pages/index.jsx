@@ -52,7 +52,7 @@ Index.propTypes = {
           frontmatter: PropTypes.shape({
             service: PropTypes.string,
             color: PropTypes.string,
-            cover: PropTypes.any
+            thumbnail: PropTypes.any
           })
         })
       )
@@ -75,7 +75,7 @@ export const pageQuery = graphql`
           title
           service
           color
-          cover {
+          thumbnail {
             childImageSharp {
               fluid(
                 maxWidth: 850

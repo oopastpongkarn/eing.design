@@ -93,11 +93,11 @@ const ProjectItem = ({ node, style, testid }) => (
   <Item key={node.fields.slug} style={style} data-testid={testid}>
     <Content>
       <ImageWrapper>
-        <Img fluid={node.frontmatter.cover.childImageSharp.fluid} />
+        <Img fluid={node.frontmatter.thumbnail.childImageSharp.fluid} />
       </ImageWrapper>
       <Link to={node.fields.slug}>
         <TracedGlow
-          src={node.frontmatter.cover.childImageSharp.fluid.tracedSVG}
+          src={node.frontmatter.thumbnail.childImageSharp.fluid.tracedSVG}
           alt=""
         />
         <Overlay style={{ backgroundColor: node.frontmatter.color }} />
