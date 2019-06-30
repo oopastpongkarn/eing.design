@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "new", // Prefix for all links. If you deploy your site to example.com/portfolio your pathPrefix should be "portfolio". If nothing, put "/"
+  pathPrefix: "/new", // Prefix for all links. If you deploy your site to example.com/portfolio your pathPrefix should be "portfolio". If nothing, put "/"
   siteTitle: "Eing", // Navigation and Site Title
   siteTitleAlt: "My name is Eing and I design things", // Alternative Site title for SEO
   siteHeadline: "graphic designer / New York", // Headline for schema.org JSONLD

@@ -9,7 +9,7 @@
     "dev": "gatsby develop -o",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "deploy": "gatsby build && gh-pages -d public -b master -a -e new",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master -a -e new",
     "lint": "eslint . --ext .js,.jsx --ignore-path .gitignore",
     "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
     "format": "prettier \"**/*.{md,mdx} \" --write",
