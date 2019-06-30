@@ -34,7 +34,7 @@ module.exports = {
             options: {
               maxWidth: 820,
               quality: 90,
-              linkImagesToOriginal: false
+              linkImagesToOriginal: true
             }
           },
           {
@@ -46,6 +46,10 @@ module.exports = {
           },
           {
             resolve: "gatsby-remark-responsive-iframe",
+            options: {}
+          },
+          {
+            resolve: "gatsby-remark-copy-linked-files",
             options: {}
           }
         ]
@@ -85,8 +89,6 @@ module.exports = {
           }
         ]
       }
-    },
-    "gatsby-plugin-offline",
-    "gatsby-plugin-netlify"
+    }
   ]
 };
