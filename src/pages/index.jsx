@@ -52,7 +52,6 @@ Index.propTypes = {
           frontmatter: PropTypes.shape({
             service: PropTypes.string,
             color: PropTypes.string,
-            client: PropTypes.string,
             cover: PropTypes.any,
           }),
         })
@@ -76,7 +75,6 @@ export const pageQuery = graphql`
           title
           service
           color
-          client
           cover {
             childImageSharp {
               fluid(maxWidth: 850, quality: 90, traceSVG: { color: "#f3f3f3" }) {

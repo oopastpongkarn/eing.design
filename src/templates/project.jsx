@@ -67,15 +67,11 @@ const Project = ({ data: { mdx: postNode }, location }) => {
           </Title>
           <InformationWrapper style={infoProps}>
             <InfoBlock customcolor={project.color}>
-              <div>Client</div>
-              <div>{project.client}</div>
-            </InfoBlock>
-            <InfoBlock customcolor={project.color}>
               <div>Date</div>
               <div>{project.date}</div>
             </InfoBlock>
             <InfoBlock customcolor={project.color}>
-              <div>Service</div>
+              <div>Type</div>
               <div>{project.service}</div>
             </InfoBlock>
           </InformationWrapper>
@@ -118,7 +114,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "DD.MM.YYYY")
-        client
         color
         service
         cover {
