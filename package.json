@@ -58,10 +58,7 @@
     "typeface-roboto": "^0.0.54"
   },
   "keywords": [
-    "gatsby",
-    "gatsby-starter",
-    "gatsby-starter-portfolio",
-    "lekoarts"
+    "gatsby"
   ],
   "repository": {
     "url": "https://github.com/oopastpongkarn/eing.design",
