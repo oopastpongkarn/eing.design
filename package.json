@@ -5,7 +5,7 @@
   "private": true,
   "author": "Eing Onusa Opastpongkarn",
   "scripts": {
-    "develop": "gatsby develop",
+    "develop": "rimraf ./.cache && gatsby develop",
     "dev": "gatsby develop -o",
     "build": "rimraf ./.cache ./public && gatsby build",
     "serve": "gatsby serve",
