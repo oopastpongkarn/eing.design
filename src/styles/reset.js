@@ -1,5 +1,5 @@
-import { css } from 'styled-components'
-import theme from '../../config/theme'
+import { css } from "styled-components";
+import theme from "../../config/theme";
 
 const reset = css`
   *,
@@ -35,7 +35,8 @@ const reset = css`
     h5 {
       font-size: 1rem;
     }
-    @media (max-width: ${theme.breakpoints.l}), (max-device-width: ${theme.breakpoints.l}) {
+    @media (max-width: ${theme.breakpoints.l}),
+      (max-device-width: ${theme.breakpoints.l}) {
       font-size: 18px !important;
       h1 {
         font-size: 2.074rem;
@@ -50,10 +51,12 @@ const reset = css`
         font-size: 1.2rem;
       }
     }
-    @media (max-width: ${theme.breakpoints.m}), (max-device-width: ${theme.breakpoints.m}) {
+    @media (max-width: ${theme.breakpoints.m}),
+      (max-device-width: ${theme.breakpoints.m}) {
       font-size: 16px !important;
     }
-    @media (max-width: ${theme.breakpoints.s}), (max-device-width: ${theme.breakpoints.s}) {
+    @media (max-width: ${theme.breakpoints.s}),
+      (max-device-width: ${theme.breakpoints.s}) {
       h1 {
         font-size: 1.602rem;
       }
@@ -107,7 +110,7 @@ const reset = css`
       line-height: 1.3 !important;
     }
   }
-  [tabindex='-1']:focus {
+  [tabindex="-1"]:focus {
     outline: none !important;
   }
   pre {
@@ -121,13 +124,13 @@ const reset = css`
   img {
     vertical-align: middle;
   }
-  [role='button'] {
+  [role="button"] {
     cursor: pointer;
   }
   a,
   area,
   button,
-  [role='button'],
+  [role="button"],
   input,
   label,
   select,
@@ -163,10 +166,10 @@ const reset = css`
   textarea {
     line-height: inherit;
   }
-  input[type='date'],
-  input[type='time'],
-  input[type='datetime-local'],
-  input[type='month'] {
+  input[type="date"],
+  input[type="time"],
+  input[type="datetime-local"],
+  input[type="month"] {
     -webkit-appearance: listbox;
   }
   textarea {
@@ -186,7 +189,7 @@ const reset = css`
     font-size: 1.5rem;
     line-height: inherit;
   }
-  input[type='search'] {
+  input[type="search"] {
     -webkit-appearance: none;
   }
   output {
@@ -199,6 +202,6 @@ const reset = css`
   [hidden] {
     display: none !important;
   }
-`
+`;
 
-export default reset
+export default reset;

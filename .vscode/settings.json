@@ -1,5 +1,17 @@
 {
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
   "files.associations": {
     "*.mdx": "markdown",
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/*.scss.d.ts": true,
+    "public/": true,
+    ".cache/": true
   }
 }

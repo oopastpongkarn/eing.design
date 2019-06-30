@@ -1,11 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import { animated, useSpring, config } from 'react-spring'
-import MDXRenderer from 'gatsby-mdx/mdx-renderer'
-import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
-import { SEO, Container, Layout, Hero, BGImage } from '../components'
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import { animated, useSpring, config } from "react-spring";
+import MDXRenderer from "gatsby-mdx/mdx-renderer";
+import { graphql } from "gatsby";
+import Img from "gatsby-image";
+import { SEO, Container, Layout, Hero, BGImage } from "../components";
 
 const Content = styled(Container)`
   position: absolute;
@@ -15,18 +15,18 @@ const Content = styled(Container)`
   padding-top: 2rem;
   padding-bottom: 2rem;
   z-index: 3;
-`
+`;
 
 const InformationWrapper = styled(animated.div)`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-`
+`;
 
 const Title = styled(animated.h1)`
   margin-top: 0;
-`
+`;
 
 const InfoBlock = styled.div`
   display: flex;
@@ -36,23 +36,34 @@ const InfoBlock = styled.div`
     text-transform: uppercase;
     font-size: 0.75rem;
     font-weight: 700;
-    color: ${props => (props.customcolor ? props.customcolor : props.theme.colors.grey)};
+    color: ${props =>
+      props.customcolor ? props.customcolor : props.theme.colors.grey};
   }
   div:last-child {
     font-size: 1rem;
   }
-`
+`;
 
 const Project = ({ data: { mdx: postNode }, location }) => {
-  const project = postNode.frontmatter
+  const project = postNode.frontmatter;
 
   const titleProps = useSpring({
     config: config.slow,
-    from: { opacity: 0, transform: 'translate3d(0, -30px, 0)' },
-    to: { opacity: 1, transform: 'translate3d(0, 0, 0)' },
-  })
-  const infoProps = useSpring({ config: config.slow, delay: 500, from: { opacity: 0 }, to: { opacity: 1 } })
-  const contentProps = useSpring({ config: config.slow, delay: 1000, from: { opacity: 0 }, to: { opacity: 1 } })
+    from: { opacity: 0, transform: "translate3d(0, -30px, 0)" },
+    to: { opacity: 1, transform: "translate3d(0, 0, 0)" }
+  });
+  const infoProps = useSpring({
+    config: config.slow,
+    delay: 500,
+    from: { opacity: 0 },
+    to: { opacity: 1 }
+  });
+  const contentProps = useSpring({
+    config: config.slow,
+    delay: 1000,
+    from: { opacity: 0 },
+    to: { opacity: 1 }
+  });
 
   return (
     <Layout pathname={location.pathname} customSEO>
@@ -83,17 +94,17 @@ const Project = ({ data: { mdx: postNode }, location }) => {
         </animated.div>
       </Container>
     </Layout>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;
 
 Project.propTypes = {
   data: PropTypes.shape({
-    mdx: PropTypes.object.isRequired,
+    mdx: PropTypes.object.isRequired
   }).isRequired,
-  location: PropTypes.object.isRequired,
-}
+  location: PropTypes.object.isRequired
+};
 
 export const pageQuery = graphql`
   query($slug: String!) {
@@ -129,4 +140,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
