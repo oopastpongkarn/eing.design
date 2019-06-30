@@ -75,6 +75,14 @@ const SocialMedia = styled.div`
   a:not(:first-child) {
     margin-left: 1rem;
   }
+  a.instagram:hover,
+  a.instagram:focus {
+    color: #c32aa3;
+  }
+  a.linkedin:hover,
+  a.linkedin:focus {
+    color: #0077b5;
+  }
   @media (max-width: ${props => props.theme.breakpoints.s}) {
     padding: 0 1rem;
   }
@@ -117,6 +125,7 @@ const Navigation = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram"
+          className="instagram"
         >
           <FaInstagram />
         </a>
@@ -125,6 +134,7 @@ const Navigation = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
+          className="linkedin"
         >
           <FaLinkedin />
         </a>
