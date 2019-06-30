@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useStaticQuery, graphql } from "gatsby";
+import { Link, useStaticQuery, graphql, withPrefix } from "gatsby";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import styled from "styled-components";
 import config from "../../config/website";
@@ -83,6 +83,10 @@ const SocialMedia = styled.div`
   }
 `;
 
+const NavLogo = styled.img`
+  max-width: 54px;
+`;
+
 // Grabs all MDX files from src/pages and puts them into the navigation
 
 const Navigation = () => {
@@ -104,7 +108,7 @@ const Navigation = () => {
       </Nav>
       <Name>
         <Link to="/" data-testid="home-title-link">
-          {config.siteTitle}
+          <NavLogo src={withPrefix("/images/einglogo.png")} />
         </Link>
       </Name>
       <SocialMedia>
