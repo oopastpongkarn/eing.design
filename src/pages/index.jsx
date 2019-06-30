@@ -73,6 +73,7 @@ export const pageQuery = graphql`
           slug
         }
         frontmatter {
+          title
           service
           color
           client
