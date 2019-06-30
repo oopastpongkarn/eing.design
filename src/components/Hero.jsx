@@ -6,10 +6,6 @@ const Hero = styled.section`
   height: ${props => (props.single ? "30vw" : "40vw")};
   overflow: hidden;
   margin-bottom: ${props => (props.single ? "4rem" : "6rem")};
-  @media (max-width: ${props => props.theme.breakpoints.m}),
-    (max-device-width: ${props => props.theme.breakpoints.m}) {
-    height: 40vw;
-  }
   @media (max-width: ${props => props.theme.breakpoints.s}),
     (max-device-width: ${props => props.theme.breakpoints.s}) {
     height: ${props => (props.single ? "300px" : "400px")};
