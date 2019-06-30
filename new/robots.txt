@@ -1,0 +1,3 @@
+User-agent: *
+
+sitemap: https://eing.design/sitemap.xml
