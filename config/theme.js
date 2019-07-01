@@ -15,15 +15,16 @@ const colors = {
   link_color_hover: `${darken(0.15, brand.primary)}`
 };
 
+const breakpoints = ["400px", "600px", "900px", "1200px"];
+breakpoints.xs = breakpoints[0];
+breakpoints.s = breakpoints[1];
+breakpoints.m = breakpoints[2];
+breakpoints.l = breakpoints[3];
+
 const theme = {
   brand,
   colors,
-  breakpoints: {
-    xs: "400px",
-    s: "600px",
-    m: "900px",
-    l: "1200px"
-  },
+  breakpoints,
   container: {
     base: "100rem",
     text: "55rem"
