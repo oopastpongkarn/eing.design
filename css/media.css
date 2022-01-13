@@ -1,29 +1,51 @@
 @media (max-width: 550px){ 
 
+
 	html body * {
 		visibility: hidden;
 	}
 	
+	#bigscreen {
+		visibility: hidden;
+		height: 0px;
+		display: none;
+	}
+	
+
+	
 	#smallscreen {
-		width: 100vw;
-		height: 100vh;
-		text-align: center;
-		margin-top: 16%;
+		position: relative;
+		top: 0px;
 	}
 	
 	#smallscreen img {
 		visibility: visible;
-		  height: 10em;
-		  width: auto;
-	  }
+		width: 100vw;
+		height: 100%;
+		}
 	
-	#smallscreen h2{
+	#smallsss {
 		visibility: visible;
 		position: absolute;
-		color: white;
-		font-size: 2em;
-		padding: 0% 2% 0% 2%;
+		background-color: #ffeed1;
+		top: 130.7vh;
+		left: 9vw;
+		width: 82vw;
+		aspect-ratio: 12/1;
+		opacity: 100%;
+		mix-blend-mode: multiply;
 	}
+	
+	#smallemail {
+		visibility: visible;
+		position: absolute;
+		background-color: #ffeed1;
+		top: 160.5vh;
+		left: 3vw;
+		width: 93vw;
+		aspect-ratio: 12/1;
+		opacity: 100%;
+		mix-blend-mode: multiply;
 }
 
 /*iphone*/
@@ -33,27 +55,14 @@
 	html body * {
 		visibility: hidden;
 	}
-	
+
 	#smallscreen {
-		width: 100vw;
-		height: 100vh;
-		text-align: center;
-		margin-top: 16%;
+
 	}
 	
 	#smallscreen img {
-		visibility: visible;
-		  height: 10em;
-		  width: auto;
-	  }
-	
-	#smallscreen h2{
-		visibility: visible;
-		position: absolute;
-		color: white;
-		font-size: 1.3em;
-		padding: 0% 2% 0% 2%;
-	}
+		
+		}
 }
 
 
@@ -65,10 +74,6 @@
 		visibility: visible;
 	}
 	
-	#smallscreen{
-		display: none;
-		visibility: hidden;
-	}
 
 }
 
@@ -85,404 +90,4 @@
 -==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 
- @media (max-width: 945px), (max-height: 650px) { 
-     .stickyeing, .xstickyeing, #eingonusa, #gd, #emaileing a {
-         transform: scale(0.8);
-     }
-     
-     .stickyeing {
-         bottom: -71px;
-         right: -58px;
-     } 
-     .xstickyeing {
-         bottom: 463px;
-         right: 125px;
-     }
-     
-     #eingonusa {
-         bottom: 373px;
-         right: 241px;
-     }
-     #gd {
-         bottom: 342px;
-         right: 225px;
-     }
-     #emaileing a {
-         bottom: 352px;
-         right: 225px;
-     }
-     #about-window {
-         transform: scale(1.2);
-         left: 120px;
-         top: 200px;
-     }
-     #novtext {
-         width: 85%;
-     }
-     #pong_web {
-         width: 100%;
-         margin-left: 0%;
-         padding-bottom: 14%;
-     }
-
- }
-
-
-
-@media (min-width: 771px) and (max-width: 1080px) { 
-
-   }
 */
-
-  
-
-/*iphone5*/
-/*
-
-@media (min-width: 320px) and (max-width: 374px) { 
-    
-    body {
-        overflow: visible;
-        position: absolute;
-    }
-    
-    #bg1 {
-        width: 100vw;
-        height: 100vh;
-    }
-    
-    #colophon {
-        display: none;
-    }
-    
-    #bg2, #bg3, #bg4, #bg5 {
-        display: none;
-    }
-    #eingandnav {
-        width: 320px;
-        left: 0px;
-        top: 0px;
-        height: 100vh;
-        box-shadow: 0;
-    }
-    #eeiinngg {
-        width: 290px;
-    }
-    #eeiinngg p{
-        padding-left: 19px;
-        padding-top: 19px;
-        padding-bottom: 19px;
-    }
-    
-    #nav {
-        width: 300px;
-        padding-bottom: 3px;
-        padding-left: 0px;
-        padding-right: 0px;
-        padding-top: 0px;
-        height: 67.5%;
-        line-height: 60px;
-    }
-    
-    #about-content a, #about-content a:visited, #r_in_about {
-    background-color: #ffc42c; 
-    color: black;
-}
-    
-    
-    
-    #about, #contacteing  {
-        font-size: 17px;
-        border-bottom: solid black 4px;
-        padding-left: 28px;
-    }
-    
-    .miniport {
-        font-size: 17px;
-        border-bottom: solid black 10px;
-        padding-left: 28px;
-    }
-    #about:hover, #contacteing:hover, .miniport:hover, #einglikestakingphotos:hover {
-    color: black;
-    background-color: white;
-
-}
-      
-    #pj-icon, #projects {
-        left: 44px;
-        top: 393px;
-    }
-    
-    #r-icon, #resume {
-        left: 174px;
-        top: 394px;
-    }
-    
-    #eingsresume_lol {
-        left: 0;
-        top: 0px;
-    }
-    
-    #xresume {
-        margin-top: -415px;
-        right: 31px;
-    }
-    #eingsresume_lol img{
-        width: 100vw;
-    }
-    #about-window {
-        width: 300px;
-        height: 377px;
-        top:158px;
-        left: 0px;
-        transform: scale(1);
-    }
-    #about-content {
-        width: 87%;
-        padding-top: 19px;
-        padding-right: 20px;
-        padding-bottom: 15px;
-        padding-left: 20px;
-        line-height: 26px;
-        font-size: 15px;
-    }
-    #xabout{
-        top: 42px;
-        left: -9px;
-        z-index: 1000;
-    }
-    #stickyandx{
-        z-index: 42;
-    }
-    .stickyeing {
-        transform: scale(0.94);
-        bottom: -267px;
-        right: -201px;
-    }
-    #eingonusa {
-        bottom: 209px;
-        right: 121px;
-    }
-    #gd {
-        bottom: 168px;
-        right: 95px;
-    }
-    #emaileing a{
-        bottom: 186px;
-        right: 95px;
-    }
-    .xstickyeing {
-        bottom: 274px;
-        right: 20px;
-        font-size: 55px;
-        font-weight: 500;
-    }
-    #leave-stay-window {
-        top: 292px;
-        width: 300px;
-        height: 165px;
-        left: 0;
-        box-shadow: 0;
-    }
-    #leave-stay-content p{
-        width: 300px;
-        height: auto;
-        font-size: 15px;
-        line-height: 36px;
-        padding: 10px 10px 12px 13px;  
-    }
-    #dont-go {
-        width: 143px;
-    }
-    #stay{
-        width: 145px;
-        left: 145px;
-    }
-    #projects-window {
-        height: 91.5vh;
-        border-bottom: black solid 10px;
-        border-left: black solid 10px;
-        border-right: black solid 10px;
-        top: 0%;
-        left: 0%;
-        position: absolute;
-    }
-    
-    .detailed-project-windows {
-        width: 88%;
-        height: auto;
-        padding-bottom: 162.5%;
-        border-bottom: black solid 10px;
-        border-left: black solid 10px;
-        border-right: black solid 10px;
-        top: 0%;
-        left: 0%;
-
-    }
-    #xprojects, .xclosemex {
-        margin-top: -38.5px;
-        font-size: 24px;
-        z-index: 10000;
-    }
-    #projects-content {
-        width: 100%;
-        height: 100.2%; 
-    }
-    .detailed-project-content {
-        width: 100%;
-        height: 93.2%; 
-        overflow-x: hidden;
-    }
-    
-    .detailed-project-content img{
-        min-width: 0;
-    }
-    
-    .boxes-for-projects {
-        width: 100%;
-        padding-bottom: 100%;
-        margin: 0;
-    }
-    
-    .boxes-for-projects:hover {
-        opacity: 1;
-    }
-    .bar {
-        border-bottom: black solid 9px;
-        border-top: black solid 9px;
-    }
-
-    
-    ::-webkit-scrollbar {
-        width: 4px;
-    }
-    ::-webkit-scrollbar-thumb {
-        border: 0;
-    }
-    ::-webkit-scrollbar-track {
-        border: 0;
-        background-color: #c9c9c9;
-    }
-    
-    #book12 {
-        width: 90%;
-        margin: 5% 0% 10% 10%;
-    }
-    #book2clean {
-        margin: 1% 1.5% 7.5% 5%;
-    }
-    #typebook_bullets {
-        padding-left: 15%;
-    }
-    #book3 {
-        height: 60%;
-        min-width: 0;
-        margin: 5% 0% 0% 7%;
-    }
-    #poster_system {
-        width: 95%;
-    }
-    #boba-text {
-        margin-top: -1.5%;
-        margin-left: 13%;
-        margin: 7% 20% 15% 8.5%;
-    }
-    #photo1, #photo2, #photo3 {
-        min-width: 0;
-        width: 80%;
-        margin: 7% 20% 15% 9.5%
-    }
-    #fix {
-        width: 80%;
-        padding: 10% 3% 10% 9.5%;
-    }
-    #filmtext {
-        padding: 10% 0% 5% 9.5%;
-    }
-    #photo3gif, #photo3gif2 {
-        margin: 0% 0% 5% 3.5%; 
-    }
-    #fouroriginal {
-        width: 100%;
-        padding: 0%;
-        min-width: 0;
-    }
-    #fourfour:hover {
-        opacity: 1;
-    }
-    
-    #fourfour {
-        width: 100%;
-        padding: 10% 0% 0% 0%;
-        min-width: 0;
-        margin-top: 0;
-    }
-    #type_as_img {
-        padding: 6% 0% 0% 12%;
-    }
-    #fourfourthree {
-        margin: 5% 0% -7% 5%;
-    }
-    #usa {
-        width: 95%;
-        padding: 0%;
-    }
-    #novtext {
-        padding: 0% 0% 3% 13%;
-    }
-    #november {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 0;
-    }
-    #novemgif {
-        width: 80%;
-        margin-left: 10%;
-        margin-bottom: 20px;
-    }
-    #nov_sketch {
-        width: 80%;
-        margin: 0% 0% 10% 10%;
-    }
-    
-    #book_text {
-        padding: 4% 0% 3% 13%;
-    }
-}
-*/
-
-/*iphone6*/
-/*
-@media (min-width: 375px) and (max-width: 410px) { 
-  
-
-}
-*/
-
-
-/*iphone6s*/
-/*
-@media (min-width: 411px) and (max-width: 430px) { 
-  
-}
-
-@media (min-height: 1000px) and (max-width: 2600px) { 
-     #projects-window {
-         height: 1045px;
-         max-width: 1780px;
-         
-     }
-    #projects-content {
-        height: 96.75%;
-        width: 100.1%
-    }
-    
-    .detailed-project-windows {
-        height: 1070px;
-        max-width: 1800px;
-    }
-    
-    .detailed-project-content {
-        height: 96.85%;
-    }
-     }*/
