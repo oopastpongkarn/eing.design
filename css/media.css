@@ -1,4 +1,4 @@
-@media (max-width: 550px){ 
+@media (max-width: 1024px){ 
 
 
 	html body * {
@@ -11,7 +11,6 @@
 		display: none;
 	}
 	
-
 	
 	#smallscreen {
 		position: relative;
@@ -28,9 +27,9 @@
 		visibility: visible;
 		position: absolute;
 		background-color: #ffeed1;
-		top: 130.7vh;
-		left: 9vw;
-		width: 82vw;
+		top: 64.1%;
+		left: 9%;
+		width: 82%;
 		aspect-ratio: 12/1;
 		opacity: 100%;
 		mix-blend-mode: multiply;
@@ -40,29 +39,65 @@
 		visibility: visible;
 		position: absolute;
 		background-color: #ffeed1;
-		top: 160.5vh;
-		left: 3vw;
-		width: 93vw;
+		top: 78.9%;
+		left: 3%;
+		width: 93%;
 		aspect-ratio: 12/1;
 		opacity: 100%;
 		mix-blend-mode: multiply;
+	}
 }
 
 /*iphone*/
 
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
 
-	html body * {
+		html body * {
 		visibility: hidden;
 	}
-
+	
+	#bigscreen {
+		visibility: hidden;
+		height: 0px;
+		display: none;
+	}
+	
+	
 	#smallscreen {
-
+		position: relative;
+		top: 0px;
 	}
 	
 	#smallscreen img {
-		
+		visibility: visible;
+		width: 100vw;
+		height: 100%;
 		}
+	
+	#smallsss {
+		visibility: visible;
+		position: absolute;
+		background-color: #ffeed1;
+		top: 64.1%;
+		left: 9%;
+		width: 82%;
+		aspect-ratio: 12/1;
+		opacity: 100%;
+		mix-blend-mode: multiply;
+	}
+	
+	#smallemail {
+		visibility: visible;
+		position: absolute;
+		background-color: #ffeed1;
+		top: 78.9%;
+		left: 3%;
+		width: 93%;
+		aspect-ratio: 12/1;
+		opacity: 100%;
+		mix-blend-mode: multiply;
+	}
+	
 }
 
 
@@ -70,14 +105,54 @@
 
 @media (min-width: 550px){ 
 
-	html body * {
+		html body * {
+		visibility: hidden;
+	}
+	
+	#bigscreen {
+		visibility: hidden;
+		height: 0px;
+		display: none;
+	}
+	
+	
+	#smallscreen {
+		position: relative;
+		top: 0px;
+	}
+	
+	#smallscreen img {
 		visibility: visible;
+		width: 100vw;
+		height: 100%;
+		}
+	
+	#smallsss {
+		visibility: visible;
+		position: absolute;
+		background-color: #ffeed1;
+		top: 64.1%;
+		left: 9%;
+		width: 82%;
+		aspect-ratio: 12/1;
+		opacity: 100%;
+		mix-blend-mode: multiply;
+	}
+	
+	#smallemail {
+		visibility: visible;
+		position: absolute;
+		background-color: #ffeed1;
+		top: 78.9%;
+		left: 3%;
+		width: 93%;
+		aspect-ratio: 12/1;
+		opacity: 100%;
+		mix-blend-mode: multiply;
 	}
 	
 
 }
-
-
 
 
 /*
