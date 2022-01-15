@@ -19,6 +19,11 @@ body {
 /*	overflow: scroll;*/
 }
 
+::selection {
+  color: none;
+  background: none;
+}
+
 
 /*
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░

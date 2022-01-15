@@ -15,6 +15,7 @@
 	#smallscreen {
 		position: relative;
 		top: 0px;
+		pointer-events: none; 
 	}
 	
 	#smallscreen img {
@@ -45,12 +46,13 @@
 		aspect-ratio: 12/1;
 		opacity: 100%;
 		mix-blend-mode: multiply;
+
 	}
 }
 
 /*iphone*/
 
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+@media only screen and (min-device-width : 250px) and (max-device-width : 667px) {
 
 		html body * {
 		visibility: hidden;
@@ -66,6 +68,7 @@
 	#smallscreen {
 		position: relative;
 		top: 0px;
+		pointer-events: none; 
 	}
 	
 	#smallscreen img {
@@ -86,6 +89,7 @@
 		mix-blend-mode: multiply;
 	}
 	
+
 	#smallemail {
 		visibility: visible;
 		position: absolute;
@@ -96,8 +100,19 @@
 		aspect-ratio: 12/1;
 		opacity: 100%;
 		mix-blend-mode: multiply;
-	}
+		font-size: 6vw;
+		color: #ffeed1;
+		pointer-events: auto; 
+		text-align: center;
+		letter-spacing: 1.5vw;
+ 
+  -webkit-user-select: all;  /* Chrome all / Safari all */
+  -moz-user-select: all;     /* Firefox all */
+  -ms-user-select: all;      /* IE 10+ */
+  user-select: all;          /* Likely future */   
+}
 	
+
 }
 
 
