@@ -17,6 +17,10 @@
 		pointer-events: none; 
 	}
 	
+	#smallscreen a {
+		pointer-events: auto; 
+	}
+	
 	#smallscreen img {
 		visibility: visible;
 		width: 100vw;
